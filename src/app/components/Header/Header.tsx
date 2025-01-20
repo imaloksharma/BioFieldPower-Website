@@ -1,91 +1,67 @@
 import Link from "next/link";
-import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
+import { FaSearch, FaUser, FaShoppingCart, FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="flex justify-between items-center p-4 bg-white shadow">
       <div className="text-2xl font-bold text-green-700">BioField</div>
-      <nav className="flex space-x-6">
-        <div className="relative group">
-          <Link href="/" className="hover:text-green-700">
+
+      <div className="lg:hidden">
+        <button onClick={toggleMenu}>
+          <FaBars className="text-gray-600 hover:text-green-700 cursor-pointer" />
+        </button>
+      </div>
+
+      <nav className={`lg:flex ${isMenuOpen ? 'fixed inset-0 bg-black bg-opacity-50 z-50' : 'hidden'} lg:block `}>
+        <div className="lg:hidden flex flex-col items-center justify-center space-y-6 bg-white w-full h-full">
+          <div className="absolute top-4 right-4">
+            <button onClick={toggleMenu}>
+              <FaBars className="text-gray-600 text-2xl" />
+            </button>
+          </div>
+          <Link href="/" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
             Home
           </Link>
-          <div className="absolute hidden group-hover:block bg-white shadow-lg">
-            <ul className="mt-2 space-y-1">
-              <li>
-                <Link href="/home/sub1" className="block px-4 py-2 hover:bg-gray-100">
-                  Sub Item 1
-                </Link>
-              </li>
-              <li>
-                <Link href="/home/sub2" className="block px-4 py-2 hover:bg-gray-100">
-                  Sub Item 2
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="relative group">
-          <Link href="/products" className="hover:text-green-700">
+          <Link href="/products" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
             Products
           </Link>
-          <div className="absolute hidden group-hover:block bg-white shadow-lg">
-            <ul className="mt-2 space-y-1">
-              <li>
-                <Link href="/products/category1" className="block px-4 py-2 hover:bg-gray-100">
-                  Category 1
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/category2" className="block px-4 py-2 hover:bg-gray-100">
-                  Category 2
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="relative group">
-          <Link href="/about" className="hover:text-green-700">
+          <Link href="/about" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
             About Us
           </Link>
-          <div className="absolute hidden group-hover:block bg-white shadow-lg">
-            <ul className="mt-2 space-y-1">
-              <li>
-                <Link href="/about/mission" className="block px-4 py-2 hover:bg-gray-100">
-                  Mission
-                </Link>
-              </li>
-              <li>
-                <Link href="/about/team" className="block px-4 py-2 hover:bg-gray-100">
-                  Team
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <Link href="/blog" className="hover:text-green-700">
-          Blog
-        </Link>
-        <div className="relative group">
-          <Link href="/contact" className="hover:text-green-700">
+          <Link href="/blog" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+            Blog
+          </Link>
+          <Link href="/contact" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
             Contact
           </Link>
-          <div className="absolute hidden group-hover:block bg-white shadow-lg">
-            <ul className="mt-2 space-y-1">
-              <li>
-                <Link href="/contact/support" className="block px-4 py-2 hover:bg-gray-100">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact/sales" className="block px-4 py-2 hover:bg-gray-100">
-                  Sales
-                </Link>
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        <div className="hidden lg:flex space-x-6">
+          <Link href="/" className="text-black hover:text-green-700">
+            Home
+          </Link>
+          <Link href="/products" className="text-black hover:text-green-700">
+            Products
+          </Link>
+          <Link href="/about" className="text-black hover:text-green-700">
+            About Us
+          </Link>
+          <Link href="/blog" className="text-black hover:text-green-700">
+            Blog
+          </Link>
+          <Link href="/contact" className="text-black hover:text-green-700">
+            Contact
+          </Link>
         </div>
       </nav>
+
       <div className="flex items-center space-x-4">
         <FaSearch className="text-gray-600 hover:text-green-700 cursor-pointer" />
         <FaUser className="text-gray-600 hover:text-green-700 cursor-pointer" />
