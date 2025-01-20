@@ -10,6 +10,7 @@ const AgriCard: React.FC = () => {
             src="img/solarPanel.png"
             alt="Solar panels on farmland with crops"
             className="w-3/2 h-96 lg:h-fit object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
+
           />
         </div>
         <div className="flex flex-col justify-start p-7 lg:w-1/2">
@@ -31,3 +32,4 @@ const AgriCard: React.FC = () => {
 };
 
 export default AgriCard;
+

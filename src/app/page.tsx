@@ -7,6 +7,7 @@ import Footer from '@/app/components/Footer/Footer'
 import AgriPVCard from './components/Cards/AgriPVCard';
 import Biomass from './components/Cards/Biomass';
 import People from '@/app/components/people/people'
+
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       <Biomass/>
       <People/>
       <Footer/>
+
     </div>
   );
 }
