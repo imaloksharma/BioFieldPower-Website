@@ -18,6 +18,7 @@ export default function HeroSection() {
         </p>
         <div className="mt-8 bg-white rounded-full p-4 shadow-lg">
           <p className="text-green-600 text-xl font-medium">80% Energy Saved</p>
+
         </div>
       </div>
     </section>
