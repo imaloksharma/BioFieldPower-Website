@@ -10,35 +10,46 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 bg-white shadow">
-      <div className="text-2xl font-bold text-green-700">BioField</div>
+    <header className="flex justify-between items-center px-6 py-4 bg-white shadow-lg">
+      <div className="flex items-center space-x-2 text-green-700">
+        <img className="h-10 w-auto" src="/img/logo.png" alt="Logo" />
+        <span className="text-xl font-bold">BioField Power</span>
+      </div>
 
       <div className="lg:hidden">
-        <button onClick={toggleMenu}>
-          <FaBars className="text-gray-600 hover:text-green-700 cursor-pointer" />
+        <button onClick={toggleMenu} aria-label="Toggle Menu">
+          <FaBars className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
         </button>
       </div>
 
-      <nav className={`lg:flex ${isMenuOpen ? 'fixed inset-0 bg-black bg-opacity-50 z-50' : 'hidden'} lg:block `}>
-        <div className="lg:hidden flex flex-col items-center justify-center space-y-6 bg-white w-full h-full">
-          <div className="absolute top-4 right-4">
-            <button onClick={toggleMenu}>
-              <FaBars className="text-gray-600 text-2xl" />
-            </button>
-          </div>
-          <Link href="/" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+      <nav
+        className={`${
+          isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-50" : "hidden"
+        } lg:flex lg:relative lg:inset-auto lg:bg-transparent lg:z-auto lg:space-x-6`}
+      >
+        <div
+          className={`${
+            isMenuOpen
+              ? "flex flex-col items-center justify-center w-full h-full bg-white space-y-6"
+              : "hidden"
+          } lg:hidden`}
+        >
+          <button onClick={toggleMenu} className="absolute top-4 right-4">
+            <FaBars className="text-gray-600 text-2xl" />
+          </button>
+          <Link href="/" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Home
           </Link>
-          <Link href="/products" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+          <Link href="/products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Products
           </Link>
-          <Link href="/about" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+          <Link href="/about" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             About Us
           </Link>
-          <Link href="/blog" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+          <Link href="/blog" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="/contact" className="text-2xl text-black hover:text-green-700" onClick={toggleMenu}>
+          <Link href="/contact" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Contact
           </Link>
         </div>
@@ -63,9 +74,9 @@ export default function Header() {
       </nav>
 
       <div className="flex items-center space-x-4">
-        <FaSearch className="text-gray-600 hover:text-green-700 cursor-pointer" />
-        <FaUser className="text-gray-600 hover:text-green-700 cursor-pointer" />
-        <FaShoppingCart className="text-gray-600 hover:text-green-700 cursor-pointer" />
+        <FaSearch className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
+        <FaUser className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
+        <FaShoppingCart className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
       </div>
     </header>
   );
