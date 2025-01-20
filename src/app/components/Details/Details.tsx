@@ -18,10 +18,10 @@ export default function AboutUs() {
           <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <h2 className="text-4xl font-bold text-green-800">Our Mission</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At Biofield Power, our mission is to improve farmers' income while enabling the seamless adoption of
-              advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
-              aim to digitalise rural economies and provide a robust platform for industries to achieve their Sustainable
-              Development Goals (SDGs).
+            At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
+  advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
+  aim to digitalise rural economies and provide a robust platform for industries to achieve their Sustainable
+  Development Goals (SDGs).
             </p>
           </div>
       </section>
