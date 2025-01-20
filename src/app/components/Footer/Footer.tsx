@@ -6,8 +6,10 @@ const Footer = () => {
     <footer className="py-10 bg-white">
       <div className="flex flex-wrap justify-start gap-10 container mx-auto">
         <div className="w-full sm:w-1/4 lg:w-1/5">
-          <h1 className="text-3xl text-green-800 font-semibold mb-3">BioField</h1>
-          <div className="flex gap-3 mt-3">
+        <div className="flex items-center space-x-2 text-green-700">
+        <img className="h-10 w-auto" src="/img/logo.png" alt="Logo" />
+        <span className="text-xl font-bold">BioField Power</span>
+      </div>          <div className="flex gap-3 mt-3">
             <a href="https://facebook.com" aria-label="Facebook" className="text-gray-500 hover:text-green-800">
               <FaFacebook size={30} />
             </a>
