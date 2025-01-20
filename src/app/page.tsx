@@ -4,7 +4,7 @@ import HeroSection from '@/app/components/Hero/Index';
 import About from '@/app/components/Details/Details'
 import './globals.css';
 import Footer from '@/app/components/Footer/Footer'
-import AgriPVCard from './components/Cards/AgriPVCards';
+import AgriPVCard from './components/Cards/AgriPVCard';
 import Biomass from './components/Cards/Biomass';
 import People from '@/app/components/people/people'
 
