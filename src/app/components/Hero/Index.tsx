@@ -14,7 +14,7 @@ export default function HeroSection() {
           Empowering Renewable Energy
         </h1>
         <p className="mt-4 text-xl text-green-700">
-        &quot;Powering the Future Sustainably with Biomass Solutions&quot;
+        &quot;Powering the Future Sustainably with Biomass Solutions&quot;   
         </p>
         <div className="mt-8 bg-white rounded-full p-4 shadow-lg">
           <p className="text-green-600 text-xl font-medium">80% Energy Saved</p>

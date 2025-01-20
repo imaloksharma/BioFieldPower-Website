@@ -16,12 +16,14 @@ const AgriCard: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl font-black text-gray-800 mb-7">Agri-PV Systems</h1>
           <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
           Agri-PV Systems utilise farmland boundaries to install solar panels,
+
             generating renewable energy without compromising cultivation space.
             This innovative model creates an additional income stream for
             farmers through revenue-sharing while supporting sustainable energy
             adoption in rural areas.
             </p>
           <button className="self-start px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+
             Learn More
           </button>
         </div>
@@ -31,3 +33,4 @@ const AgriCard: React.FC = () => {
 };
 
 export default AgriCard;
+
