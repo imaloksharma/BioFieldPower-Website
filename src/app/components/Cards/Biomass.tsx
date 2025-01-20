@@ -9,7 +9,7 @@ const Biomass: React.FC = () => {
           <img
             src="img/biomass.png"
             alt="Solar panels on farmland with crops"
-            className="w-3/2 h-96 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
+            className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
           />
         </div>
         <div className="flex flex-col justify-start p-7 lg:w-1/2">
