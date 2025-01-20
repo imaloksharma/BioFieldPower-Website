@@ -1,5 +1,8 @@
-import Header from '@/Component/Header/Header';
-import HeroSection from '@/Component/Hero/Index';
+"use client";
+import Header from '@/./app/components/Header/Header';
+import HeroSection from '@/./app/components/Hero/Index';
+
+import './globals.css';
 
 export default function Home() {
   return (
