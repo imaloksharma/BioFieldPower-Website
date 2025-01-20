@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen bg-cover m-4 bg-center" style={{ backgroundImage: 'url("img/Solar.png")' }}>
+    <section className="relative h-screen bg-cover m-4 bg-center" style={{ backgroundImage: 'url("Img/Solar.png")' }}>
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 
