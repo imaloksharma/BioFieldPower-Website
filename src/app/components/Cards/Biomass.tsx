@@ -33,9 +33,9 @@ const Biomass: React.FC = () => {
              </button>
            </p>
          
-          <button className="self-start px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+          {/* <button className="self-start px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
