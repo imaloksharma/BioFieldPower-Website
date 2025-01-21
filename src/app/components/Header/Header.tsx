@@ -13,7 +13,7 @@ export default function Header() {
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow-lg">
       <div className="flex items-center space-x-2 text-green-700">
         <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
-        <span className="text-xl font-bold">BioField Power</span>
+        <span className="text-xl font-bold">Biofield Power</span>
       </div>
 
       <div className="lg:hidden">
