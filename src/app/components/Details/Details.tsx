@@ -2,7 +2,7 @@ export default function AboutUs() {
     return (
       <section className="p-10 bg-gray-50">
       
-          <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-12 items-center">
             <h2 className="text-4xl font-bold text-green-800">About Us</h2>
            <div> <p className="text-lg text-gray-700 leading-relaxed">
               Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
@@ -15,7 +15,7 @@ export default function AboutUs() {
             </p></div>
           </div>
   
-          <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 lg:gap-12 items-center">
             <h2 className="text-4xl font-bold text-green-800">Our Mission</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
             At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
