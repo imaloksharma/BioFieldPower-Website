@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-2 text-green-700">
               <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
-              <span className="text-xl font-bold">BioField Power</span>
+              <span className="text-xl font-bold">Biofield Power</span>
             </div>
             <div className="flex gap-3 mt-3">
               <a href="https://facebook.com" aria-label="Facebook" className="text-gray-500 hover:text-green-800">
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="mt-10 text-sm text-center border-t border-gray-300 pt-4 text-gray-600">
-          <p>&copy; 2025 BioField. All rights reserved.</p>
+          <p>&copy; 2025 Biofield Power. All rights reserved.</p>
         </div>
       </div>
     </footer>
