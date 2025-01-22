@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Social Media Section */}
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-2 text-green-700">
-              <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
+              <img className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
               <span className="text-xl font-bold">Biofield Power</span>
             </div>
             <div className="flex gap-3 mt-3">
