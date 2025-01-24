@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter Section */}
+          {/* Newsletter Section
           <div>
             <h4 className="text-xl font-semibold mb-3">Subscribe to our newsletter</h4>
             <p className="text-gray-600 mb-4">Stay updated with our latest news and offers.</p>
@@ -67,7 +67,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer Bottom Section */}

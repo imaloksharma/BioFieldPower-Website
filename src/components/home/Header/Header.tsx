@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { FaSearch, FaUser, FaShoppingCart, FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 import { useState } from "react";
 
 export default function Header() {
@@ -35,39 +37,40 @@ export default function Header() {
           } lg:hidden`}
         >
           <button onClick={toggleMenu} className="absolute top-4 right-4">
-            <FaBars className="text-gray-600 text-2xl" />
+             {isMenuOpen ?                    <IoMdClose  className="text-gray-600 text-2xl" />
+:    <FaBars className="text-gray-600 text-2xl" /> }
           </button>
           <Link href="/" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Home
           </Link>
-          <Link href="/products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Products
           </Link>
-          <Link href="/about" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#about" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             About Us
           </Link>
-          <Link href="/blog" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#blog" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="/contact" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#contact" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Contact
           </Link>
         </div>
 
         <div className="hidden lg:flex space-x-6">
-          <Link href="/" className="text-black hover:text-green-700">
+          <Link href="#home" className="text-black hover:text-green-700">
             Home
           </Link>
-          <Link href="/products" className="text-black hover:text-green-700">
+          <Link href="#products" className="text-black hover:text-green-700">
             Products
           </Link>
-          <Link href="/about" className="text-black hover:text-green-700">
+          <Link href="#about" className="text-black hover:text-green-700">
             About Us
           </Link>
-          <Link href="/blog" className="text-black hover:text-green-700">
+          <Link href="#blog" className="text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="/contact" className="text-black hover:text-green-700">
+          <Link href="#contact" className="text-black hover:text-green-700">
             Contact
           </Link>
         </div>

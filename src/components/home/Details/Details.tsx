@@ -1,4 +1,26 @@
 export default function AboutUs() {
+
+  const WhatWeDo = () => {
+    return (
+      <section className="py-10 lg:px-6">
+        <div className="max-w-4xl  ">
+          <h2
+            className="text-3xl font-bold text-green-700 mb-4"
+          >
+            What We Do?
+          </h2>
+          <p
+            className="text-lg text-gray-700 transition-opacity duration-500 hover:opacity-80"
+          >
+            At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers' livelihoods and promoting sustainable practices.
+          </p>
+        </div>
+      </section>
+    );
+  };
+
+
+
     return (
       <section className="p-10 bg-gray-50">
       
@@ -24,6 +46,7 @@ export default function AboutUs() {
   Development Goals (SDGs).
             </p>
           </div>
+            <WhatWeDo/>
       </section>
     );
   }
