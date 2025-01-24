@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow-lg">
       <div className="flex items-center space-x-2 text-green-700">
-        <img className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
+        <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
         <span className="text-xl font-bold">Biofield Power</span>
       </div>
 
@@ -37,37 +37,37 @@ export default function Header() {
           <button onClick={toggleMenu} className="absolute top-4 right-4">
             <FaBars className="text-gray-600 text-2xl" />
           </button>
-          <Link href="/" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#home" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Home
           </Link>
-          <Link href="/products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Products
           </Link>
-          <Link href="/about" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#about" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             About Us
           </Link>
-          <Link href="/blog" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#blog" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="/contact" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="#contact" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Contact
           </Link>
         </div>
 
         <div className="hidden lg:flex space-x-6">
-          <Link href="/" className="text-black hover:text-green-700">
+          <Link href="#home" className="text-black hover:text-green-700">
             Home
           </Link>
-          <Link href="/products" className="text-black hover:text-green-700">
+          <Link href="#products" className="text-black hover:text-green-700">
             Products
           </Link>
-          <Link href="/about" className="text-black hover:text-green-700">
+          <Link href="#about" className="text-black hover:text-green-700">
             About Us
           </Link>
-          <Link href="/blog" className="text-black hover:text-green-700">
+          <Link href="#blog" className="text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="/contact" className="text-black hover:text-green-700">
+          <Link href="#contact" className="text-black hover:text-green-700">
             Contact
           </Link>
         </div>
