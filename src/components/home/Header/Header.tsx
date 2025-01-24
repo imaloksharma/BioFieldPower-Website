@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { FaSearch, FaUser, FaShoppingCart, FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 import { useState } from "react";
 
 export default function Header() {
@@ -16,6 +18,7 @@ export default function Header() {
           <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
           <span className="text-xl font-bold">Biofield Power</span>
         </div>
+
 
         <div className="lg:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
@@ -54,6 +57,7 @@ export default function Header() {
               Contact
             </Link>
           </div>
+
 
           <div className="hidden lg:flex space-x-6">
             <Link href="/#home" className="text-black hover:text-green-700">
