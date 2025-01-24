@@ -23,9 +23,8 @@ export default function Home() {
       <section id="blog">
         <Blog />
       </section>
-      <section id="contact">
-      </section>
       <Footer />
     </div>
+
   );
 }
