@@ -13,12 +13,12 @@ export default function Home() {
       <section id="home">
         <Index />
       </section>
+      <section id="about">
+        <Details />
+      </section>
       <section id="products">
         <AgriCard />
         <Biomass />
-      </section>
-      <section id="about">
-        <Details />
       </section>
       <section id="blog">
         <Blog />

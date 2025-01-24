@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { FaSearch, FaUser, FaShoppingCart, FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 import { useState } from "react";
 
 export default function Header() {
@@ -12,7 +14,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow-lg">
       <div className="flex items-center space-x-2 text-green-700">
-        <img className="h-10 w-auto" src="/Img/logo.png" alt="Logo" />
+        <img className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
         <span className="text-xl font-bold">Biofield Power</span>
       </div>
 
@@ -35,9 +37,10 @@ export default function Header() {
           } lg:hidden`}
         >
           <button onClick={toggleMenu} className="absolute top-4 right-4">
-            <FaBars className="text-gray-600 text-2xl" />
+             {isMenuOpen ?                    <IoMdClose  className="text-gray-600 text-2xl" />
+:    <FaBars className="text-gray-600 text-2xl" /> }
           </button>
-          <Link href="#home" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
+          <Link href="/" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
             Home
           </Link>
           <Link href="#products" onClick={toggleMenu} className="text-2xl text-black hover:text-green-700">
