@@ -1,12 +1,11 @@
 "use client";
-import Home1 from '@/components/home/page'
-
-import './globals.css';
-
+import Header from "@/components/home/Header/Header";
+import Home1 from "@/components/home/page";
 export default function Home() {
   return (
     <div>
-    <Home1/>
+      <Header />
+      <Home1 />
     </div>
   );
 }
