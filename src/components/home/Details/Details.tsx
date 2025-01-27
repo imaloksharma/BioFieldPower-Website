@@ -12,7 +12,7 @@ export default function AboutUs() {
           <p
             className="text-lg text-gray-700 transition-opacity duration-500 hover:opacity-80"
           >
-            At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers' livelihoods and promoting sustainable practices.
+            At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&#39; livelihoods and promoting sustainable practices.
           </p>
         </div>
       </section>
