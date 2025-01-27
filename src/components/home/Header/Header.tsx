@@ -72,7 +72,7 @@ export default function Header() {
             Blog
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             onClick={toggleMenu}
             className="text-2xl text-black hover:text-green-700"
           >
@@ -93,7 +93,7 @@ export default function Header() {
           <Link href="#blog" className="text-black hover:text-green-700">
             Blog
           </Link>
-          <Link href="#contact" className="text-black hover:text-green-700">
+          <Link href="/contact" className="text-black hover:text-green-700">
             Contact
           </Link>
         </div>

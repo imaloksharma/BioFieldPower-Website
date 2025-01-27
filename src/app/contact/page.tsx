@@ -45,7 +45,7 @@ export default function Contact() {
       <div className="min-h-screen bg-gray-100 py-10 px-6">
         <h2 className="text-3xl font-bold text-center mb-6">Send Us a Message</h2>
         <p className="text-lg text-center mb-10">
-          Feel free to reach out to us through this form!
+          Feel free to reach us through this form!
         </p>
         <form className="max-w-xl mx-auto bg-white p-8 rounded shadow">
           <div className="mb-4">
