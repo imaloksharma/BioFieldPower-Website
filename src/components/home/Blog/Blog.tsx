@@ -1,68 +1,63 @@
-import React from 'react';
+"use client";
 
-const blogsData = [
-  {
-    title: 'Agri-PV Systems',
-    description: 'The Future of Sustainable Farming and Renewable Energy',
-    image: '/Img/Agri-PV.png',
-    link: '/blogs/agri-pv-systems',
-  },
-  {
-    title: 'Government Policies',
-    description: 'Supporting Agri-PV Systems in India.',
-    image: '/Img/gov.png',
-    link: '/blogs/government-policies',
-  },
-  {
-    title: 'Lessons from the Field',
-    description: 'A Case Study of Agri-PV Systems in Punjab',
-    image: '/Img/Bio.png',
-    link: '/blogs/lessons-from-field',
-  },
-  {
-    title: 'The Benefits of Biomass',
-    description: 'A Sustainable Energy Source',
-    image: '/Img/logo.png',
-    link: '/blogs/benefits-of-biomass',
-  },
+import React, { useEffect, useState, useRef } from "react"; // Note useRef import
+
+const testimonialsData = [
+  { name: "Dr. Amandeep Singh", role: "Agriculture Officer", message: "Biofield Power is revolutionizing agriculture with their innovative solutions.", image: "/Img/Kisan.jpg" },
+  { name: "Rajan Kaur", role: "Farmer", message: "Their biomass supply chain app is a game-changer for us.", image: "/Img/Kisan.jpg" },
+  { name: "John Doe", role: "Industry Partner", message: "Excited to see the impact of their Agri-PV system.", image: "/Img/Kisan.jpg" },
+  { name: "Jane Smith", role: "Angel Investor", message: "Supporting sustainable development goals with innovative tech.", image: "/Img/Kisan.jpg" },
+  { name: "Michael Brown", role: "Industry Partner", message: "A great example of uplifting the rural economy.", image: "/Img/Kisan.jpg" },
 ];
 
-const Blogs = () => {
-  return (
-    <section className="py-12 bg-white">
-      <h2 className="text-3xl font-bold text-green-800 text-left px-8">Blogs</h2>
+const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const cardRef = useRef(null); // create a ref to store the card reference
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8 mt-6">
-        {blogsData.map((blog, index) => (
-          <div
-            key={index}
-            className="rounded-lg overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow duration-300 group"
-          >
-            <div className="relative">
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [testimonialsData.length]);
+
+  const getCardWidth = () => {
+    if (cardRef.current) {
+      return cardRef.current.offsetWidth;
+    }
+    return 0;
+  };
+
+  return (
+    <section className="py-12 bg-green-50">
+      <h2 className="text-3xl font-bold text-green-800 text-center mb-8">What People Are Saying</h2>
+      <div className="relative overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 "
+          style={{
+            transform: `translateX(-${activeIndex * getCardWidth()}px)`,
+          }}
+        >
+          {testimonialsData.map((testimonial, index) => (
+            <div
+              key={index}
+              ref={index === 0 ? cardRef : null} 
+              className="flex-shrink-0 w-full lg:mx-16 sm:w-4/5 sm:max-w-sm lg:w-1/3 max-w-full mx-auto bg-green-700 rounded-lg p-6 text-white flex flex-col items-start shadow-lg"
+            >
+              <div className="flex items-center  mb-4">
+                <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-white" />
+                <div>
+                  <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                  <p className="text-sm opacity-75">{testimonial.role}</p>
+                </div>
+              </div>
+              <p className="text-sm">{testimonial.message}</p>
             </div>
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-                {blog.title}
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">{blog.description}</p>
-              <a
-                href={blog.link}
-                className="inline-block bg-green-600 text-white text-sm font-medium py-2 px-6 rounded-md hover:bg-green-700 transition-transform duration-300 transform group-hover:scale-105"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default Blogs;
+export default Testimonials;
