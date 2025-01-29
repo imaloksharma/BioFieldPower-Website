@@ -4,6 +4,7 @@ import AgriCard from "./Cards/AgriPVCard";
 import Biomass from "./Cards/Biomass";
 import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
 import Header from "./Header/Header";
 import Index from "./Hero/Index";
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
       <section id="blog">
         <Blog />
       </section>
+      {/* <section id="contect">
+        <Contact />
+      </section> */}
       <Footer />
     </div>
 
