@@ -99,11 +99,11 @@ export default function Header() {
         </div>
       </nav>
 
-      <div className="flex items-center space-x-4">
+      {/* <div className="flex items-center space-x-4">
         <FaSearch className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
         <FaUser className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
         <FaShoppingCart className="text-gray-600 hover:text-green-700 cursor-pointer text-xl" />
-      </div>
+      </div> */}
     </header>
   );
 }
