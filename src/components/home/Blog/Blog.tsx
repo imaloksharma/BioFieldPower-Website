@@ -12,8 +12,8 @@ const testimonialsData = [
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const cardRef = useRef(null); // create a ref to store the card reference
-
+  // const cardRef = useRef(null); // create a ref to store the card reference
+  const cardRef = useRef<HTMLDivElement>(null); // create a ref to store the card reference
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
