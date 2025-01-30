@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaSearch, FaUser, FaShoppingCart, FaBars } from "react-icons/fa";
+import {  FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 import { useState } from "react";
