@@ -1,7 +1,9 @@
 "use client";
 import Blog from "./Blog/Blog";
 import AgriCard from "./Cards/AgriPVCard";
+
 import Biomass from "./Cards/Biomass";
+import CarbonCredit from "./Cards/CarbonCredit";
 import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
@@ -16,6 +18,7 @@ export default function Home() {
       <section id="products">
         <AgriCard />
         <Biomass />
+        <CarbonCredit />
       </section>
       <section id="about">
         <Details />
