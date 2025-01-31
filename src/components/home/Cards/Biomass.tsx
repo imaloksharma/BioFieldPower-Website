@@ -13,7 +13,7 @@ const Biomass: React.FC = () => {
             className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
           />
         </div>
-        <div className="flex flex-col justify-start p-7 lg:w-1/2">
+        <div className="flex flex-col justify-start p-7 lg:w-2/3">
           <h1 className="text-4xl sm:text-5xl font-black text-gray-800 mb-7">Biomass to Wealth</h1>
           <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
           Our innovative digital solution enhances the efficiency of the biomass supply chain
