@@ -4,7 +4,7 @@ import { useState } from "react";
 const CarbonCredit: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-[30px] shadow-lg border border-black border-opacity-10 transition-all duration-300">
+    <div className="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-[20px] border border-black border-opacity-10 transition-all duration-300">
       <div className="flex flex-col lg:flex-row bg-transparent shadow-none overflow-hidden border-0">
         <div className="relative w-full lg:w-1/2">
           <img
@@ -27,7 +27,7 @@ const CarbonCredit: React.FC = () => {
             )}
              <button
              onClick={() => setIsExpanded(!isExpanded)}
-             className="text-red-500 mb-6 text-lg sm:text-xl lg:text-2xl"
+             className="text-green-600 mb-6 text-lg sm:text-xl lg:text-2xl"
              >
              {isExpanded ? "  Read Less" : "...Read More"}
              </button>
