@@ -1,25 +1,20 @@
 "use client";
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
-import Header from "@/components/home/Header/Header";
-
-const ContactForm: React.FC = () => {
+const ContactForm1: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Ensure Header is always visible */}
-      <Header />
-
-      <div className="flex items-center justify-center p-4 sm:p-8 md:p-10">
-        <div className="pt-6 bg-green-50 border border-gray-500 rounded-[30px] shadow-lg p-6 sm:p-8 md:p-10 w-full max-w-7xl overflow-y-auto max-h-[95vh]">
+    <div className="bg-black-100">
+      <div className="container mx-auto px-4 py-12">
+        <div className="bg-green-50 border border-gray-500 rounded-[30px] shadow-lg p-6 sm:p-8 md:p-10 w-full max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div className="flex flex-col h-full px-4 sm:px-6 md:px-8">
           <div className="flex-grow text-center md:text-left">
-            <h1 className="pt-4 text-4xl sm:text-5xl md:text-6xl text-green-800 mb-6 font-bold">
+            <h1 className="pt-4 text-4xl sm:text-6xl md:text-5xl text-green-800 mb-6 font-bold">
               Contact Us
             </h1>
           </div>
           <div className="flex-grow text-center md:text-left">
-            <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-4 leading-snug">
+            <p className="text-xl sm:text-3xl md:text-4xl text-gray-700 mb-4 leading-snug">
               &quot;Connect with us to power a{" "}
               <span className="text-green-800 font-semibold">greener tomorrow.&quot;</span>
             </p>
@@ -32,11 +27,10 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
 
+
             <form className="bg-white p-6 sm:p-8 md:p-10 shadow-lg rounded-[20px] border border-gray-500 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="col-span-2 sm:col-span-1">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Full Name
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Full Name</label>
                 <input
                   type="text"
                   placeholder="Enter your Name"
@@ -45,9 +39,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2 sm:col-span-1">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Email Address
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Email Address</label>
                 <input
                   type="email"
                   placeholder="Enter your Email"
@@ -56,9 +48,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2 sm:col-span-1">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Phone Number
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Phone Number</label>
                 <input
                   type="tel"
                   placeholder="Enter your Phone Number"
@@ -67,9 +57,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2 sm:col-span-1">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Company Name
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Company Name</label>
                 <input
                   type="text"
                   placeholder="Enter your Company Name"
@@ -78,9 +66,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Subject
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Subject</label>
                 <input
                   type="text"
                   placeholder="Enter your Subject"
@@ -89,19 +75,17 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2">
-                <label className="block text-gray-800 font-medium mb-2">
-                  Message
-                </label>
+                <label className="block text-gray-800 font-medium mb-2">Message</label>
                 <textarea
                   placeholder="E.g. Enter the message for Enquiry"
                   className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-lg p-4 h-32 focus:outline-none focus:ring-2 focus:ring-green-600"
                 ></textarea>
               </div>
 
-              <div className="col-span-2 justify-start">
+              <div className="col-span-2 flex justify-center md:justify-start">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto bg-green-700 text-white py-3 px-6 rounded-lg shadow hover:bg-green-800 transition"
+                  className="bg-green-700 text-white py-3 px-6 rounded-lg shadow hover:bg-green-800 transition"
                 >
                   Submit
                 </button>
@@ -114,4 +98,4 @@ const ContactForm: React.FC = () => {
   );
 };
 
-export default ContactForm;
+export default ContactForm1;
