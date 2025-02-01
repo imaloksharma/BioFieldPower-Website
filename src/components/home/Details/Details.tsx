@@ -25,7 +25,7 @@ export default function AboutUs() {
       <section className="p-10 bg-gray-50">
       
           <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-12 items-center">
-            <h2 className="text-4xl font-bold text-green-800">About Us</h2>
+            <h2 className="text-4xl font-bold text-red-800">About Us</h2>
            <div> <p className="text-lg text-gray-700 leading-relaxed">
               Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
               Agriculture and Water Technology Development Hub established in 2021 by the Department of Science &
