@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="scroll-smooth">
       <Header />
-      <section id="home">
+      <section id="home" className="lg:p-2">
         <Index />
       </section>
       <section id="about">
