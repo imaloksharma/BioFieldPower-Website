@@ -1,31 +1,28 @@
 export default function AboutUs() {
 
-  const WhatWeDo = () => {
+  // const WhatWeDo = () => {
+  //   return (
+  //     <section className="py-10 lg:px-6">
+  //       <div className="max-w-4xl  ">
+  //         <h2
+  //           className="text-3xl font-bold text-green-700 mb-4"
+  //         >
+  //           What We Do?
+  //         </h2>
+  //         <p
+  //           className="text-lg text-gray-700 transition-opacity duration-500 hover:opacity-80"
+  //         >
+  //           At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&#39; livelihoods and promoting sustainable practices.
+  //         </p>
+  //       </div>
+  //     </section>
+  //   );
+  // };
     return (
-      <section className="py-10 lg:px-6">
-        <div className="max-w-4xl  ">
-          <h2
-            className="text-3xl font-bold text-green-700 mb-4"
-          >
-            What We Do?
-          </h2>
-          <p
-            className="text-lg text-gray-700 transition-opacity duration-500 hover:opacity-80"
-          >
-            At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&#39; livelihoods and promoting sustainable practices.
-          </p>
-        </div>
-      </section>
-    );
-  };
-
-
-
-    return (
-      <section className="p-10 bg-gray-50">
+      <section className="p-10 bg-white-100">
       
           <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-12 items-center">
-            <h2 className="text-4xl font-bold text-red-800">About Us</h2>
+            <h1 className="text-4xl font-bold text-green-800">About Us</h1>
            <div> <p className="text-lg text-gray-700 leading-relaxed">
               Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
               Agriculture and Water Technology Development Hub established in 2021 by the Department of Science &
@@ -38,7 +35,7 @@ export default function AboutUs() {
           </div>
   
           <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 lg:gap-12 items-center">
-            <h2 className="text-4xl font-bold text-green-800">Our Mission</h2>
+            <h1 className="text-4xl font-bold text-green-800">Our Mission</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
             At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
   advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
@@ -46,8 +43,18 @@ export default function AboutUs() {
   Development Goals (SDGs).
             </p>
           </div>
-            <WhatWeDo/>
+          <div className="space-y-8 container mx-auto mt-14">
+            <h1 className="text-4xl font-bold text-green-800">What We Do?</h1>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos; 
+              livelihoods and promoting sustainable practices.
+            </p>
+          </div>
+          <div/>
       </section>
     );
   }
   
+
+
+
