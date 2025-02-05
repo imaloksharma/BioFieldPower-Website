@@ -4,10 +4,9 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
   return (
     
-    <footer className="py-10 bg-white">
-      <div className="container mx-auto px-6">
+    <footer className="py-10 bg-gray-100">
+      <div className="bg-grey-50 container mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6">
-          {/* Logo and Social Media Section */}
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-2 text-green-700">
               <img className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
@@ -26,7 +25,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Links Section */}
           <div>
             <h3 className="text-xl font-semibold mb-3">Company</h3>
             <ul className="space-y-2">
@@ -38,7 +36,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support Links Section */}
           <div>
             <h3 className="text-xl font-semibold mb-3">Support</h3>
             <ul className="space-y-2">
@@ -50,7 +47,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter Section */}
           <div>
             <h4 className="text-xl font-semibold mb-3">Subscribe to our newsletter</h4>
             <p className="text-gray-600 mb-4">Stay updated with our latest news and offers.</p>
@@ -71,7 +67,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom Section */}
         <div className="mt-10 text-sm text-center border-t border-gray-300 pt-4 text-gray-600">
           <p>&copy; 2025 Biofield Power. All rights reserved.</p>
         </div>

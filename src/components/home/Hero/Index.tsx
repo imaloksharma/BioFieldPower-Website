@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-
 export default function HeroSection() {
   return (
     <section className="relative h-68 md:h-[30rem] lg:h-[40rem] p-8 bg-cover bg-center lg:bg-[url('/Img/Solar.png')] bg-[url('/Img/Solar1.png')] transition-all duration-1000 ease-in-out">
