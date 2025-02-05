@@ -2,11 +2,11 @@
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
 import Header from "@/components/home/Header/Header";
+import { motion } from "framer-motion";
 
 const ContactForm: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
-      {/* Ensure Header is always visible */}
       <Header />
 
       <div className="flex items-center justify-center p-4 sm:p-8 md:p-10">
@@ -99,12 +99,14 @@ const ContactForm: React.FC = () => {
               </div>
 
               <div className="col-span-2 justify-start">
-                <button
+                <motion.button
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
                   type="submit"
                   className="w-full sm:w-auto bg-green-700 text-white py-3 px-6 rounded-lg shadow hover:bg-green-800 transition"
                 >
                   Submit
-                </button>
+                </motion.button>
               </div>
             </form>
           </div>

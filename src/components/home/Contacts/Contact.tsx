@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
+import { motion } from "framer-motion";
 const ContactForm1: React.FC = () => {
   return (
     <div className="bg-black-100">
@@ -83,12 +84,14 @@ const ContactForm1: React.FC = () => {
               </div>
 
               <div className="col-span-2 flex justify-center md:justify-start">
-                <button
+                <motion.button
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
                   type="submit"
-                  className="bg-green-700 text-white py-3 px-6 rounded-lg shadow hover:bg-green-800 transition"
+                  className="bg-green-700 text-white py-3 px-6 rounded-lg shadow hover:bg-green-900 transition"
                 >
                   Submit
-                </button>
+                </motion.button>
               </div>
             </form>
           </div>
