@@ -1,4 +1,6 @@
 "use client";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import Blog from "./Blog/Blog";
 import AgriCard from "./Cards/AgriPVCard";
 import Biomass from "./Cards/Biomass";
@@ -8,27 +10,53 @@ import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Index from "./Hero/Index";
+
 export default function Home() {
+  const aboutRef = useRef(null);
+  const productsRef = useRef(null);
+  const blogRef = useRef(null);
+  const isAboutInView = useInView(aboutRef, { once: true, margin: "-50px" });
+  const isProductsInView = useInView(productsRef, { once: true, margin: "-50px" });
+  const isBlogInView = useInView(blogRef, { once: true, margin: "-50px" });
+
   return (
     <div className="scroll-smooth">
       <Header />
       <section id="home">
         <Index />
       </section>
-      <section id="about">
+      <motion.section
+        id="about"
+        ref={aboutRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8 }}
+      >
         <Details />
-      </section>
-      <section id="products">
+      </motion.section>
+      <motion.section
+        id="products"
+        ref={productsRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isProductsInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8 }}
+      >
         <AgriCard />
         <Biomass />
         <CarbonCredit />
-      </section>
-      <section id="blog">
+      </motion.section>
+      <motion.section
+        id="blog"
+        ref={blogRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isBlogInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8 }}
+      >
         <Blog />
-      </section>
+      </motion.section>
+
       <ContactForm1 />
       <Footer />
     </div>
-
   );
 }

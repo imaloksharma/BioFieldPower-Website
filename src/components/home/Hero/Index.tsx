@@ -1,7 +1,4 @@
 import React from 'react';
-
-
-
 export default function HeroSection() {
   return (
     <section className="relative h-68 lg:h-screen p-8 mt-8 lg:m-4 bg-cover my-4 bg-center" style={{ backgroundImage: 'url("Img/Solar.png")' }}>
