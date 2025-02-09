@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 const CarbonCredit: React.FC = () => {
@@ -36,10 +37,12 @@ const CarbonCredit: React.FC = () => {
              {isExpanded ? "  Read Less" : "...Read More"}
              </button>
            </p>
-          {/* <button className="self-start px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+          <Link href="/carbon-credits">
+            <button className="self-start px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+              Learn More
+            </button>
+          </Link>
 
-            Learn More
-          </button> */}
         </div>
       </div>
     </div>
