@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react"; // Note useRef import
+import Image from "next/image";
 
 const testimonialsData = [
   { name: "Dr. Amandeep Singh", role: "Agriculture Officer", message: "Biofield Power is revolutionizing agriculture with their innovative solutions.", image: "/Img/Kisan.jpg" },
@@ -19,7 +20,7 @@ const Testimonials = () => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [testimonialsData.length]);
+  }, []);
 
   const getCardWidth = () => {
     if (cardRef.current) {
@@ -45,7 +46,7 @@ const Testimonials = () => {
               className="flex-shrink-0 w-full lg:mx-16 sm:w-4/5 sm:max-w-sm lg:w-1/3 max-w-full mx-auto bg-green-700 rounded-lg p-6 text-white flex flex-col items-start shadow-lg"
             >
               <div className="flex items-center  mb-4">
-                <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-white" />
+                <Image width={80} height={80} src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-white" />
                 <div>
                   <h3 className="text-lg font-semibold">{testimonial.name}</h3>
                   <p className="text-sm opacity-75">{testimonial.role}</p>
