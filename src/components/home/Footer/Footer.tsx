@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import Link  from 'next/link';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6">
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-2 text-green-700">
-              <img className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
+              <Image width={80} height={80} className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
               <span className="text-xl font-bold">Biofield Power</span>
             </div>
             <div className="flex gap-3 mt-3">

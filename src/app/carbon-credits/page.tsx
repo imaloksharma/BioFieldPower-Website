@@ -15,7 +15,7 @@ const CarbonCredit = () => {
         <h1 className="text-4xl font-bold text-green-800">Carbon Credits</h1>
         <p className="text-lg mt-4">
           India is a significant player in the global carbon credit market, contributing approximately 
-          20% of the world's carbon credits. As of June 2023, the country had 860 registered projects and 
+          20% of the world&apos;s carbon credits. As of June 2023, the country had 860 registered projects and 
           1,451 projects under various stages of consideration with leading carbon crediting programs like Verra and Gold Standard.
         </p>
         <p className="mt-4 text-lg">
@@ -54,11 +54,11 @@ const CarbonCredit = () => {
         <h1 className="text-2xl font-bold text-green-800 mt-6">Market Dynamics</h1>
         <p className="text-lg mt-2">
           The voluntary carbon markets are rapidly growing, with an increasing number of new market entrants needing data 
-          to make informed decisions. Platforms like Sylvera's Carbon Credit Analytics help participants analyze and compare 
+          to make informed decisions. Platforms like Sylvera&apos;s Carbon Credit Analytics help participants analyze and compare 
           the quality of retirements across various registries and standards.
         </p>
 
-        <h1 className="text-2xl font-bold text-green-900 mt-12">India's Carbon Credit Landscape</h1>
+        <h1 className="text-2xl font-bold text-green-900 mt-12">India&apos;s Carbon Credit Landscape</h1>
         <p className="text-lg mt-2">
           India is actively participating in carbon credit trading schemes, leveraging both compliance and voluntary markets 
           to contribute to global emissions reduction efforts.
@@ -80,7 +80,11 @@ const CarbonCredit = () => {
     </div>
   );
 };
-const ProgressCircle = ({ label, value }) => {
+interface ProgressCircleProps {
+  label: string;
+  value: number;
+}
+const ProgressCircle: React.FC<ProgressCircleProps> =({ label, value }) => {
   return (
     <div className="flex flex-col items-center">
       <div className="w-32 h-32">
