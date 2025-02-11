@@ -17,7 +17,9 @@ export const metadata: Metadata = {
   description:
     "Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious Agriculture and Water Technology Development Hub established in 2021 by the Department of Science & Technology, Government of India. With a mission to empower farmers and transform rural economies, we develop innovative technologies that bridge the gap between traditional agriculture and modern advancements.",
   keywords: [
+    "BiofieldPower",
     "Biofield Power",
+    "Biofield Power website",
     "agriculture technology",
     "IIT Ropar startup",
     "sustainable farming",
