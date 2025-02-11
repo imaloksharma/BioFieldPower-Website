@@ -1,5 +1,5 @@
 import Link  from 'next/link';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Image from "next/image";
 
 const Footer = () => {
@@ -14,8 +14,8 @@ const Footer = () => {
               <span className="text-xl font-bold">Biofield Power</span>
             </div>
             <div className="flex gap-3 mt-3">
-              <a href="https://facebook.com" aria-label="Facebook" className="text-gray-500 hover:text-green-800">
-                <FaFacebook size={30} />
+              <a href="https://facebook.com" aria-label="Linkdin" className="text-gray-500 hover:text-green-800">
+                <FaLinkedin size={30} />
               </a>
               <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-green-800">
                 <FaInstagram size={30} />
@@ -26,18 +26,18 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-3">Company</h3>
-            <ul className="space-y-2">
-              <li><Link href="/about" className="hover:text-green-800">About Us</Link></li>
-              <li><Link href="/careers" className="hover:text-green-800">Careers</Link></li>
-              <li><Link href="/press" className="hover:text-green-800">Press</Link></li>
-              <li><Link href="/blog" className="hover:text-green-800">Blog</Link></li>
+          <div >
+            <h3 className="text-xl  font-semibold mb-3">Company</h3>
+            <ul className="gap-4  flex">
+              <li><Link href="#about" className="hover:text-green-800">About Us</Link></li>
+              <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSfHPtUx0tFN-uFkE8Bz_aG8EBTXhTkb9tUH0umyKFqJsjRvgQ/viewform" className="hover:text-green-800">Careers</Link></li>
+              {/* <li><Link href="/press" className="hover:text-green-800">Press</Link></li> */}
+              <li><Link href="#blog" className="hover:text-green-800">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-green-800">Contact</Link></li>
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-3">Support</h3>
             <ul className="space-y-2">
               <li><Link href="/help-center" className="hover:text-green-800">Help Center</Link></li>
@@ -46,9 +46,9 @@ const Footer = () => {
               <li><Link href="/privacy-policy" className="hover:text-green-800">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service" className="hover:text-green-800">Terms of Service</Link></li>
             </ul>
-          </div>
+          </div> */}
 
-          <div>
+          {/* <div>
             <h4 className="text-xl font-semibold mb-3">Subscribe to our newsletter</h4>
             <p className="text-gray-600 mb-4">Stay updated with our latest news and offers.</p>
             <form className="flex flex-col sm:flex-row gap-3">
@@ -65,7 +65,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-10 text-sm text-center border-t border-gray-300 pt-4 text-gray-600">
