@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Biofield Power</span>
             </div>
             <div className="flex gap-3 mt-3">
-              <a href="https://facebook.com" aria-label="Linkdin" className="text-gray-500 hover:text-green-800">
+              <a href="https://www.linkedin.com/company/biofield-power/" aria-label="Linkdin" className="text-gray-500 hover:text-green-800">
                 <FaLinkedin size={30} />
               </a>
               <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-green-800">
