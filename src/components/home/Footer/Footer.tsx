@@ -20,11 +20,12 @@ const Footer = () => {
               <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-green-800">
                 <FaInstagram size={30} />
               </a>
-              <a href="https://twitter.com" aria-label="Twitter" className="text-gray-500 hover:text-green-800">
+              <a href="https://twitter.com" aria-label="Twitter" className="text-gray-500 hover:text-green-799">
                 <FaTwitter size={30} />
               </a>
             </div>
           </div>
+    
 
           <div >
             <h3 className="text-xl  font-semibold mb-3">Company</h3>
