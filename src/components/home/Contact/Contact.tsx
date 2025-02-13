@@ -12,7 +12,7 @@ const ContactForm: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div className="flex flex-col h-full">
             <div className="flex-grow text-center md:text-left">
-              <h1 className=" pt-4 pl-3 text-65xl sm:text-6xl md:text-5xl text-green-800 mb-6 font-bold">
+              <h1 className=" pt-4 pl-3 text-65xl sm:text-6xl md:text-5xl text-green-799 mb-6 font-bold">
                 Contact Us
               </h1>
             </div>
