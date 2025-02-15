@@ -27,6 +27,7 @@ const ContactForm: React.FC = () => {
                   <span>Book Consultation</span>
                 </button>
               </div>
+
             </div>
 
             <form className="bg-white p-4 sm:p-6 md:p-8 shadow-md rounded-[15px] border border-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-4">
