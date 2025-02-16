@@ -2,7 +2,6 @@
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
-
 const ContactForm1: React.FC = () => {
   return (
     <div className="bg-black-100">
@@ -16,6 +15,11 @@ const ContactForm1: React.FC = () => {
                 </h1>
               </div>
               <div className="flex-grow text-center md:text-left">
+              <img
+            src="/contactperson.png"
+            alt="Carbon Credit"
+            className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
+          />
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-3 leading-snug">
                   &quot;Connect with us to power a {" "}
                   <span className="text-green-800 font-semibold">greener tomorrow.&quot;</span>
@@ -28,61 +32,92 @@ const ContactForm1: React.FC = () => {
                 </button>
               </div>
             </div>
-
-            <form className="bg-white p-4 sm:p-6 md:p-8 shadow-md rounded-[15px] border border-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <form className=" p-4 sm:p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="col-span-2 sm:col-span-1">
                 <label className="block text-gray-800 text-sm font-medium mb-1">Full Name</label>
                 <input
                   type="text"
                   placeholder="Enter your Name"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
               </div>
-
               <div className="col-span-2 sm:col-span-1">
                 <label className="block text-gray-800 text-sm font-medium mb-1">Email Address</label>
                 <input
                   type="email"
                   placeholder="Enter your Email"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
               </div>
-
               <div className="col-span-2 sm:col-span-1">
                 <label className="block text-gray-800 text-sm font-medium mb-1">Phone Number</label>
                 <input
                   type="tel"
                   placeholder="Enter your Phone Number"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
               </div>
-
               <div className="col-span-2 sm:col-span-1">
                 <label className="block text-gray-800 text-sm font-medium mb-1">Company Name</label>
                 <input
                   type="text"
                   placeholder="Enter your Company Name"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+              <div className="col-span-2 sm:col-span-1">
+                <label className="block text-gray-800 text-sm font-medium mb-1">Company Email</label>
+                <input
+                  type="tel"
+                  placeholder="Enter your Phone Number"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
               </div>
 
-              <div className="col-span-2">
-                <label className="block text-gray-800 text-sm font-medium mb-1">Subject</label>
+              <div className="col-span-2 sm:col-span-1">
+                <label className="block text-gray-800 text-sm font-medium mb-1">Company Phone Number</label>
                 <input
                   type="text"
-                  placeholder="Enter your Subject"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  placeholder="Enter your Company Name"
+                  className="w-full bg-white-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
               </div>
 
-              <div className="col-span-2">
-                <label className="block text-gray-800 text-sm font-medium mb-1">Message</label>
+              <div className="col-span-2 sm:col-span-2">
+              <label className="block text-gray-800 text-sm font-medium mb-1">
+                Subject
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your Subject"
+                className="w-full bg-white-100 text-gray-800 border border-gray-300 rounded-md p-2 text-sm 
+                          focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+          <div className="col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+            <div>
+              <label className="block text-gray-800 text-sm font-medium mb-1">
+                Location
+              </label>
+              <iframe
+                width="100%"
+                height="250"
+                title="Google Map Location"
+                className="rounded-md border border-gray-300 shadow"
+                src="https://maps.google.com/maps?q=IIT%20Ropar&output=embed"
+              ></iframe>
+            </div>
+              <div>
+                <label className="block text-gray-800 text-sm font-medium mb-1">
+                  Message
+                </label>
                 <textarea
                   placeholder="E.g. Enter the message for Enquiry"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 h-24 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-white-100 text-gray-800 border border-gray-300 rounded-md p-2 text-sm 
+                            focus:outline-none focus:ring-2 focus:ring-green-600 h-[250px]"
                 ></textarea>
               </div>
-
+            </div>
               <div className="col-span-2 flex justify-center md:justify-start">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -100,5 +135,4 @@ const ContactForm1: React.FC = () => {
     </div>
   );
 };
-
 export default ContactForm1;
