@@ -101,9 +101,9 @@ const ContactForm1: React.FC = () => {
               </label>
               <iframe
                 width="100%"
-                height="250"
+                height="50%"
                 title="Google Map Location"
-                className="rounded-md border border-gray-300 shadow"
+                className="rounded-md border p-2 border-gray-300 shadow"
                 src="https://maps.google.com/maps?q=IIT%20Ropar&output=embed"
               ></iframe>
             </div>
