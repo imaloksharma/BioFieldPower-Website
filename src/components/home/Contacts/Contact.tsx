@@ -16,7 +16,7 @@ const ContactForm1: React.FC = () => {
                 </h1>
               </div>
               <div className="flex-grow text-center md:text-left">
-              <Image
+              <Image width={100} height={100}
             src="/contactperson.png"
             alt="Carbon Credit"
             className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
