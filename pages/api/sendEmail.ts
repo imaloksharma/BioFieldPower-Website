@@ -1,5 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
+// import type { Transporter } from "nodemailer";
+
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
@@ -22,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const mailOptions = {
       from: process.env.EMAIL_FROM,
       to: process.env.EMAIL_USER,
-      subject: `New Contact Form Submission from ${fullName}`,
+      subject: `New Request Form Submission from ${fullName}`,
       html: `
         <h2>New Contact Form Submission</h2>
         <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -42,8 +45,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     await transporter.sendMail(mailOptions);
 
     return res.status(200).json({ success: true, message: "Email sent successfully!" });
-  } catch (error) {
+   } catch (error) {
     console.error("Email send error:", error);
-    return res.status(500).json({ success: false, error: error.message });
+  
+    if (error instanceof Error) {
+      return res.status(500).json({ success: false, error: error.message });
+    } else {
+      return res.status(500).json({ success: false, error: "An unknown error occurred." });
+    }
   }
+  
 }

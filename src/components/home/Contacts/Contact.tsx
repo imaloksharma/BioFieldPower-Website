@@ -2,6 +2,7 @@
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
+import Image  from 'next/image';
 const ContactForm1: React.FC = () => {
   return (
     <div className="bg-black-100">
@@ -15,7 +16,7 @@ const ContactForm1: React.FC = () => {
                 </h1>
               </div>
               <div className="flex-grow text-center md:text-left">
-              <img
+              <Image
             src="/contactperson.png"
             alt="Carbon Credit"
             className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"

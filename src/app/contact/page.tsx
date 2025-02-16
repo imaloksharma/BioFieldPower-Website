@@ -4,8 +4,19 @@ import axios from "axios";
 import { CalendarIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 
+interface FormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  companyName: string;
+  companyEmail: string;
+  companyPhone: string;
+  location: string;
+  message: string;
+}
+
 const ContactForm1: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
     phone: "",
@@ -22,7 +33,7 @@ const ContactForm1: React.FC = () => {
   const [error, setError] = useState("");
 
   const validateForm = () => {
-    let newErrors: { [key: string]: string } = {};
+    const newErrors: { [key: string]: string } = {};
     if (!formData.fullName) newErrors.fullName = "Full Name is required";
     if (!formData.email) newErrors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Invalid email format";
@@ -46,7 +57,6 @@ const ContactForm1: React.FC = () => {
 
     try {
       const response = await axios.post("/api/sendEmail", formData);
-
       if (response.status === 200) {
         setSuccess(true);
         setFormData({
@@ -77,7 +87,7 @@ const ContactForm1: React.FC = () => {
             <div className="flex flex-col h-full px-2 sm:px-4 md:px-6">
               <h1 className="pt-2 text-3xl sm:text-4xl md:text-4xl text-green-800 mb-4 font-semibold">Contact Us</h1>
               <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-3 leading-snug">
-                "Connect with us to power a <span className='text-green-800 font-semibold'>greener tomorrow."</span>
+                &ldquo;Connect with us to power a <span className="text-green-800 font-semibold">greener tomorrow.&rdquo;</span>
               </p>
               <div className="flex justify-center md:justify-start mt-4">
                 <button className="px-4 py-2 border border-gray-400 text-green-800 shadow hover:bg-green-200 transition rounded-md font-semibold flex items-center space-x-2 text-sm">
@@ -91,12 +101,25 @@ const ContactForm1: React.FC = () => {
               {Object.entries(formData).map(([key, value]) => (
                 <div key={key} className="col-span-2 sm:col-span-1">
                   <label className="block text-gray-800 text-sm font-medium mb-1">
-                    {key.replace(/([A-Z])/g, ' $1').trim().replace(/^./, str => str.toUpperCase())}
+                    {key.replace(/([A-Z])/g, " $1").trim().replace(/^./, (str) => str.toUpperCase())}
                   </label>
                   {key === "message" ? (
-                    <textarea name={key} value={value} onChange={handleChange} placeholder={`Enter your ${key}`} className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 h-24 text-sm focus:outline-none focus:ring-2 focus:ring-green-600" />
+                    <textarea
+                      name={key}
+                      value={value}
+                      onChange={handleChange}
+                      placeholder={`Enter your ${key}`}
+                      className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 h-24 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                    />
                   ) : (
-                    <input type={key.includes("email") ? "email" : key.includes("phone") ? "tel" : "text"} name={key} value={value} onChange={handleChange} placeholder={`Enter your ${key}`} className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600" />
+                    <input
+                      type={key.includes("email") ? "email" : key.includes("phone") ? "tel" : "text"}
+                      name={key}
+                      value={value}
+                      onChange={handleChange}
+                      placeholder={`Enter your ${key}`}
+                      className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                    />
                   )}
                   {errors[key] && <p className="text-red-500 text-xs mt-1">{errors[key]}</p>}
                 </div>
