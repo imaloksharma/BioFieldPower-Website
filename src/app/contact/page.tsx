@@ -2,7 +2,6 @@
 // import React, { useState } from "react";
 // import { CalendarIcon } from "@heroicons/react/outline";
 // import { motion } from "framer-motion";
-
 // const ContactForm1: React.FC = () => {
 //   const [formData, setFormData] = useState({
 //     fullName: "",
