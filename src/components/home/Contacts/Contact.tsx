@@ -105,7 +105,7 @@ const ContactForm1: React.FC = () => {
                 height="50%"
                 title="Google Map Location"
                 className="rounded-md border p-2 border-gray-300 shadow"
-                src="https://maps.google.com/maps?q=IIT%20Ropar&output=embed"
+                src="https://maps.google.com/maps?q=Ayodhya&output=embed"
               ></iframe>
             </div>
               <div>

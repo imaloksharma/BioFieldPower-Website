@@ -23,8 +23,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_USER,
+      from: `"BiofieldPower" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_FROM,
       subject: `New Request Form Submission from ${fullName}`,
       html: `
         <h2>New Contact Form Submission</h2>
