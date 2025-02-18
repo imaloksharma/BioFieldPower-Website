@@ -295,6 +295,7 @@ const ContactForm1: React.FC = () => {
                             <div className="col-span-2 flex justify-center md:justify-start">
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-700 text-white py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">
                   {loading ? "Sending..." : "Submit"}
+=
                 </motion.button>
               </div>
 
