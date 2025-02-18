@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import axios from "axios";
+import axios,{AxiosError } from "axios";
 import { CalendarIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 
@@ -47,7 +47,7 @@ const ContactForm1: React.FC = () => {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!validateForm()) return;
 
@@ -71,10 +71,12 @@ const ContactForm1: React.FC = () => {
         });
         setErrors({});
       }
-    } catch (err: any) {
-      console.error("Email send error:", err.response?.data || err.message);
-      setError(err.response?.data?.error || "Failed to send message");
-    } finally {
+     } catch (err: unknown) {
+      const error = err as AxiosError<{ error?: string }>;
+      console.error("Email send error:", error.response?.data || error.message);
+      setError(error.response?.data?.error || "Failed to send message");
+    }
+    finally {
       setLoading(false);
     }
   };
