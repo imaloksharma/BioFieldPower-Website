@@ -5,7 +5,7 @@ import { useState } from "react";
 const Biomass: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-[20px]  border border-black border-opacity-10 transition-all duration-300">
+    <div className="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-[20px]   transition-all duration-300">
       <div className="flex flex-col lg:flex-row bg-transparent shadow-none overflow-hidden border-0">
         <motion.div
         whileHover={{ scale: 0.9}}
@@ -18,7 +18,7 @@ const Biomass: React.FC = () => {
           />
         </motion.div>
         <div className="flex flex-col justify-start p-7 lg:w-2/3">
-          <h1 className="text-4xl sm:text-5xl font-black text-gray-800 mb-7">Biomass to Wealth</h1>
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-7">Digitalizing Biomass Supply Chain</h1>
           <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
           Our innovative digital solution enhances the efficiency of the biomass supply chain
            in rural India, seamlessly connecting farmers, industries, and logistics {" "}

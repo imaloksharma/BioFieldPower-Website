@@ -7,13 +7,24 @@ import Header from "@/components/home/Header/Header";
 import Footer from "@/components/home/Footer/Footer";
 import Testimonials from "@/components/home/Blog/Blog";
 import ContactForm1 from "@/components/home/Contacts/Contact";
+// import AboutUs from "@/components/home/Details/Details";
 const CarbonCredit = () => {
   return (
+
+    // <section className="p-10 bg-white-100">
+      
+    // <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 items-center">
+    // <h1 className="text-4xl font-bold text-green-800 text-center lg:text-left">About Us</h1>
+    // <div>
+    //   <p className="text-lg text-gray-700 leading-relaxed">
+    
     <div className="bg-white text-gray-800">
       <Header />
-      <div className="max-w-5xl mx-auto px-6 py-8 mb-12">
+      {/* <AboutUs/> */}
+      <div className="max-w-5xl mx-auto p-10 py-8 mb-12">
         <h1 className="text-4xl font-bold text-green-800">Carbon Credits</h1>
-        <p className="text-lg mt-4">
+        <p className=" text-justify-start text-lg mt-4">
+          
           India is a significant player in the global carbon credit market, contributing approximately 
           20% of the world&apos;s carbon credits. As of June 2023, the country had 860 registered projects and 
           1,451 projects under various stages of consideration with leading carbon crediting programs like Verra and Gold Standard.

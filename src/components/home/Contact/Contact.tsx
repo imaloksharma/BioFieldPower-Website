@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
                   Contact Us
                 </h1>
               </div>
-              <div className="flex-grow text-center md:text-left">
+              <div className="justify-center flex-grow text-center md:text-left flex flex-col items-center">
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-3 leading-snug">
                   &quot;Connect with us to power a {" "}
                   <span className="text-green-800 font-semibold">greener tomorrow.&quot;</span>
