@@ -21,30 +21,28 @@ export default function AboutUs() {
     return (
       <section className="p-10 bg-white-100">
       
-          <div className="space-y-8 container mx-auto grid lg:grid-cols-[20vw_70vw] grid-cols-1 md:grid-cols-[30vw_60vw] lg:gap-0 items-center">
-            <h1 className="text-4xl  font-bold text-green-800">About Us</h1>
-           <div> <p className="text-lg text-gray-700    leading-relaxed">
-              Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
-              Agriculture and Water Technology Development Hub established in 2021 by the Department of Science &
-              Technology, Government of India.
-            </p>
+      <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 items-center">
+      <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left">About Us</h1>
+      <div>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
+          Agriculture and Water Technology Development Hub established in 2021 by the Department of Science &
+          Technology, Government of India.With a mission to empower farmers and transform rural economies, we develop innovative technologies that
+          bridge the gap between traditional agriculture and modern advancements.
+        </p>
+      </div>
+    </div>
 
+    <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-8 lg:gap-0 items-center">
+    <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left">Our Mission</h1>
+    <p className="text-lg text-gray-700 leading-relaxed">
+      At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
+      advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
+      aim to digitalize rural economies and provide a robust platform for industries to achieve their Sustainable
+      Development Goals (SDGs).
+    </p>
+  </div>
 
-            <p className="text-lg text-gray-700  leading-relaxed">
-              With a mission to empower farmers and transform rural economies, we develop innovative technologies that
-              bridge the gap between traditional agriculture and modern advancements.
-            </p></div>
-          </div>
-  
-          <div className="space-y-8 container mx-auto grid lg:grid-cols-[20vw_70vw] grid-cols-1 md:grid-cols-[30vw_60vw] mt-8 lg:gap-0 items-center">
-            <h1 className="text-4xl font-bold  text-green-800">Our Mission</h1>
-            <p className="text-lg text-gray-700 leading-relaxed">
-            At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
-  advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
-  aim to digitalise rural economies and provide a robust platform for industries to achieve their Sustainable
-  Development Goals (SDGs).
-            </p>
-          </div>
           <div className="space-y-8 container mx-auto mt-14">
             <h1 className="text-4xl font-bold text-green-800">What We Do?</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
