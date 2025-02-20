@@ -22,7 +22,11 @@ export default function AboutUs() {
       <section className="p-10 bg-white-100">
       
       <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 items-center">
-      <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left">About Us</h1>
+      <a href="/about" className="block">
+        <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left cursor-pointer hover:underline">
+          About Us
+        </h1>
+      </a>
       <div>
         <p className="text-lg text-gray-700 leading-relaxed">
           Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
@@ -34,7 +38,11 @@ export default function AboutUs() {
     </div>
 
     <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-8 lg:gap-0 items-center">
-    <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left">Our Mission</h1>
+      <a href="/mission" className="block">
+        <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left cursor-pointer hover:underline">
+          Our Mission
+        </h1>
+      </a>
     <p className="text-lg text-gray-700 leading-relaxed">
       At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
       advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
