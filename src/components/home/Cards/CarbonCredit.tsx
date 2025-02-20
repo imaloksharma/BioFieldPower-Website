@@ -22,7 +22,7 @@ const CarbonCredit: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-7">Carbon Credit</h1>
           <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
           A Carbon Credit is a tradable certificate or permit that represents the right to emit one metric 
-          ton of carbon dioxide (COz) or an equivalent amount of other{" "}
+          ton of carbon dioxide CO<sub>2</sub> or an equivalent amount of other{" "}
           {isExpanded && (
             <>
            greenhouse gases (GHGs). Carbon credits are
