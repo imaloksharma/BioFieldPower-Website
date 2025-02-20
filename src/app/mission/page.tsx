@@ -29,7 +29,7 @@ const mission: React.FC = () => {
            Key Pillars of Our Mission
           </h1>
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-black-800">Enhancing Farmer's Income:</h3>
+            <h3 className="text-2xl font-semibold text-black-800">Enhancing Farmer&apos;s Income:</h3>
             <p className="text-lg text-gray-700 leading-relaxed">
             We empower farmers by providing access to sustainable energy solutions, carbon credits, and biomass-based income opportunities. These initiatives help increase profitability and diversify their revenue streams while reducing operational costs.
             </p>
