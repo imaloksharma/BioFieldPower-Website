@@ -15,7 +15,7 @@ const mission: React.FC = () => {
           </h1>
           <div>
             <p className="text-lg text-gray-700 leading-relaxed">
-            At Biofield Power, our mission is to transform rural livelihoods and drive the adoption of sustainable, tech-driven solutions in agriculture. We are committed to improving farmers' income, enhancing productivity, and building resilient communities. By focusing on innovative technologies, we aim to create a robust platform for rural digitalization and support industries in meeting their Sustainable Development Goals (SDGs).
+            At Biofield Power, our mission is to transform rural livelihoods and drive the adoption of sustainable, tech-driven solutions in agriculture. We are committed to improving farmer&apos;s income, enhancing productivity, and building resilient communities. By focusing on innovative technologies, we aim to create a robust platform for rural digitalization and support industries in meeting their Sustainable Development Goals (SDGs).
             </p>
           </div>
         </div>
