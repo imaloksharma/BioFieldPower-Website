@@ -8,6 +8,7 @@ const FocusAreas: React.FC = () => {
   return (
     <div className="bg-white-100">
       <Header />
+      
       <section className="p-10 bg-white-100">
         <div className="space-y-8 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 lg:gap-0 items-center">
           <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left">
