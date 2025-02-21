@@ -15,12 +15,12 @@ const CarbonCredit: React.FC = () => {
           <img
             src="/CreditCarbon.png"
             alt="Carbon Credit"
-            className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
+            className="mt-2 ml-4 w-3/4 lg:w-1/2 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
           />
         </motion.div>
         <div className="flex flex-col justify-start p-7 lg:w-2/3">
-          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-7">Carbon Credit</h1>
-          <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
+          <h1 className="text-4xl sm:text-4xl font-black text-gray-900 mb-5">Carbon Credit</h1>
+          <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-xl">
           A Carbon Credit is a tradable certificate or permit that represents the right to emit one metric 
           ton of carbon dioxide CO<sub>2</sub> or an equivalent amount of other{" "}
           {isExpanded && (
@@ -32,7 +32,7 @@ const CarbonCredit: React.FC = () => {
             )}
              <button
              onClick={() => setIsExpanded(!isExpanded)}
-             className="text-green-600 mb-6 text-lg sm:text-xl lg:text-2xl"
+             className="text-green-600 mb-6 text-lg sm:text-xl lg:text-xl"
              >
              {isExpanded ? "  Read Less" : "...Read More"}
              </button>
