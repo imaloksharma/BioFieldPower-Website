@@ -14,12 +14,12 @@ const Biomass: React.FC = () => {
           <img
             src="/biomass.png"
             alt="Solar panels on farmland with crops"
-            className="w-3/4 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
+            className="mt-2 ml-4 w-3/4 lg:w-1/2 h-120 object-cover rounded-tl-[30px] rounded-bl-[30px] rounded-br-[30px] rounded-tr-[30px]"
           />
         </motion.div>
         <div className="flex flex-col justify-start p-7 lg:w-2/3">
-          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-7">Digitalizing Biomass Supply Chain</h1>
-          <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-2xl">
+          <h1 className="text-4xl sm:text-4xl font-black text-gray-900 mb-5">Digitalizing Biomass Supply Chain</h1>
+          <p className="text-gray-600 mb-6 text-lg sm:text-xl lg:text-xl">
           Our innovative digital solution enhances the efficiency of the biomass supply chain
            in rural India, seamlessly connecting farmers, industries, and logistics {" "}
             
@@ -31,7 +31,7 @@ const Biomass: React.FC = () => {
             )}
              <button
              onClick={() => setIsExpanded(!isExpanded)}
-             className="text-green-600 mb-6 text-lg sm:text-xl lg:text-2xl"
+             className="text-green-600 mb-6 text-lg sm:text-xl lg:text-xl"
              >
              {isExpanded ? "  Read Less" : "...Read More"}
              </button>
