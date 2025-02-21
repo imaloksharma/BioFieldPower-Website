@@ -93,13 +93,6 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="#products"
-                onClick={toggleMenu}
-                className="text-2xl text-black hover:text-green-700"
-              >
-                Products
-              </Link>
-              <Link
                 href="/about"
                 onClick={toggleMenu}
                 className="text-2xl text-black hover:text-green-700"
@@ -107,11 +100,25 @@ export default function Header() {
                 About Us
               </Link>
               <Link
+                href="/mission"
+                onClick={toggleMenu}
+                className="text-2xl text-black hover:text-green-700"
+              >
+                Our Mission
+              </Link>
+              <Link
                 href="#blog"
                 onClick={toggleMenu}
                 className="text-2xl text-black hover:text-green-700"
               >
                 Blog
+              </Link>
+              <Link
+                href="#products"
+                onClick={toggleMenu}
+                className="text-2xl text-black hover:text-green-700"
+              >
+                Products
               </Link>
               <Link
                 href="/contact"

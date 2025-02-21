@@ -10,13 +10,15 @@ export default function HeroSection() {
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/30"></div> 
       
-      <div className="relative z-10 text-center lg:text-left lg:ml-16">
-        <h1 className="text-4xl text-white lg:text-8xl font-bold lg:text-slate-200 italic mix-blend-overlay drop-shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-2">
+
+      <div className="relative z-10 text-center md:text-left md:ml-16">
+        <h1 className="text-2xl md:text-6xl lg:text-7xl   font-bold text-white italic mix-blend-overlay drop-shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-2">
           Empowering <br/>
           Renewable <br/>
           Energy
         </h1>
-        <p className="mt-4 text-sm lg:text-3xl lg:mt-6 font-bold text-white mix-blend-overlay drop-shadow-lg transition-opacity duration-700 ease-in-out hover:opacity-80">
+
+        <p className="mt-6 md:mt-16 text-sm lg:text-3xl md:text-2xl font-bold text-white mix-blend-overlay drop-shadow-lg transition-opacity duration-700 ease-in-out hover:opacity-80">
           &quot;Powering the Future <br/>Sustainably with Biomass <br/> Solutions&quot;   
         </p>
       </div>
