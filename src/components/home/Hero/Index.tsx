@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import Image from 'next/image';
 import { Leaf } from "lucide-react";
 export default function HeroSection() {
   return (
@@ -19,7 +18,7 @@ export default function HeroSection() {
           Energy
         </h1>
         <p className="mt-4 md:mt-8 text-sm md:text-2xl lg:text-3xl font-bold text-white drop-shadow-lg">
-          "Powering the Future <br />Sustainably with Biomass <br /> Solutions"
+        &quot;Powering the Future <br />Sustainably with Biomass <br /> Solutions&quot;
         </p>
       </div>
 
