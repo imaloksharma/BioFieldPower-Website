@@ -21,13 +21,13 @@ export default function AboutUs() {
     return (
       <section className="p-10 bg-white-100">
       
-      <div className="space-y-8 container mx-auto grid grid-cols-12 items-center">
-  <a href="/about" className="block col-span-3 md:col-span-4 lg:col-span-3">
-    <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left cursor-pointer hover:text-green-700">
+      <div className="container mx-auto mt-8 space-y-8 flex flex-col sm:grid sm:grid-cols-12 sm:items-center">
+  <a href="/about" className="block sm:col-span-3 md:col-span-4 lg:col-span-3">
+    <h1 className="text-4xl font-bold text-green-800 text-start sm:text-left cursor-pointer hover:text-green-700">
       About Us
     </h1>
   </a>
-  <div className="col-span-9 md:col-span-9 lg:col-span-9">
+  <div className="sm:col-span-9 md:col-span-8 lg:col-span-9">
     <p className="text-lg text-gray-700 leading-relaxed">
       Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
       Agriculture and Water Technology Development Hub established in 2021 by the Department of Science & 
@@ -37,19 +37,20 @@ export default function AboutUs() {
   </div>
 </div>
 
-<div className="space-y-8 container mx-auto grid grid-cols-12 mt-8 items-center">
-  <a href="/mission" className="block col-span-3 md:col-span-3 lg:col-span-3">
-    <h1 className="text-4xl font-bold text-green-800 text-start lg:text-left cursor-pointer hover:text-green-700">
+<div className="container mx-auto mt-8 space-y-8 flex flex-col sm:grid sm:grid-cols-12 sm:items-center">
+  <a href="/mission" className="block sm:col-span-3">
+    <h1 className="text-4xl font-bold text-green-800 text-start sm:text-left cursor-pointer hover:text-green-700">
       Our Mission
     </h1>
   </a>
-  <p className="text-lg text-gray-700 leading-relaxed col-span-9 md:col-span-9 lg:col-span-9">
+  <p className="text-lg text-gray-700 leading-relaxed sm:col-span-9">
     At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
     advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
     aim to digitalize rural economies and provide a robust platform for industries to achieve their Sustainable
     Development Goals (SDGs).
   </p>
 </div>
+
 
 
           <div className="space-y-8 container mx-auto mt-14">
