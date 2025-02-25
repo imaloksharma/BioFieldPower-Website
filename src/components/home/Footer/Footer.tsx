@@ -1,5 +1,5 @@
 import Link  from 'next/link';
-import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaTwitter, FaPhone } from 'react-icons/fa';
 import Image from "next/image";
 
 const Footer = () => {
@@ -12,6 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-green-700">
               <Image width={80} height={80} className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
               <span className="text-xl font-bold">Biofield Power</span>
+              
             </div>
             <div className="flex gap-3 mt-3">
               <a href="https://www.linkedin.com/company/biofield-power/" aria-label="Linkdin" className="text-gray-500 hover:text-green-800">
@@ -24,6 +25,11 @@ const Footer = () => {
                 <FaTwitter size={30} />
               </a>
             </div>
+            <div className="flex items-center mt-3 text-gray-500 hover:text-green-800">
+                <FaPhone size={20} />
+            <a href="tel:+911234567890" className="ml-2">+91-8557897582</a>
+            </div>
+
           </div>
 
           <div >
