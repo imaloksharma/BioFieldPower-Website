@@ -25,9 +25,12 @@ const Footer = () => {
                 <FaTwitter size={30} />
               </a>
             </div>
-            <div className="flex items-center mt-3 text-gray-500 hover:text-green-800">
+            <div className="flex items-center mt-3 text-grey-500 hover:text-green-800">
                 <FaPhone size={20} />
             <a href="tel:+911234567890" className="ml-2">+91-8557897582</a>
+            </div>
+            <div className="flex items-center mt-3 text-black-200 hover:text-green-800">
+            <p className="ml-2">IIT Ropar, Rupnagar, Punjab, India</p>
             </div>
 
           </div>
@@ -35,8 +38,9 @@ const Footer = () => {
           <div >
             <h3 className="text-xl  font-semibold mb-3">Company</h3>
             <ul className="gap-4  flex">
-              <li><Link href="#about" className="hover:text-green-799">About Us</Link></li>
-              <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSfHPtUx0tFN-uFkE8Bz_aG8EBTXhTkb9tUH0umyKFqJsjRvgQ/viewform" className="hover:text-green-800">Careers</Link></li>
+              <li><Link href="/about" className="hover:text-green-799">About Us</Link></li>
+              {/* <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSfHPtUx0tFN-uFkE8Bz_aG8EBTXhTkb9tUH0umyKFqJsjRvgQ/viewform" className="hover:text-green-800">Careers</Link></li> */}
+              <li><Link href="/careers" className="hover:text-green-799">Careers</Link></li>
               {/* <li><Link href="/press" className="hover:text-green-800">Press</Link></li> */}
               <li><Link href="#blog" className="hover:text-green-800">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-green-800">Contact</Link></li>
