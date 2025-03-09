@@ -10,6 +10,7 @@ import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Index from "./Hero/Index";
+import WhatWeDo from "./Whatwedo/whatwedo"; // Import the WhatWeDo component
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -34,6 +35,17 @@ export default function Home() {
       >
         <Details />
       </motion.section>
+
+      {/* What We Do Section */}
+      <motion.section
+        id="whatwedo"
+        initial={{ opacity: 0, y: 50 }}
+        animate={isAboutInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8 }}
+      >
+        <WhatWeDo />
+      </motion.section>
+
       <motion.section
         id="products"
         ref={productsRef}
