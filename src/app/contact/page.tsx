@@ -15,7 +15,7 @@ interface FormData {
   companyEmail: string;
   companyPhone: string;
   location: string;
-  message: string;
+  message: string
 }
 
 const ContactForm1: React.FC = () => {
