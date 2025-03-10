@@ -2,9 +2,7 @@ export default function WhatWeDo() {
   return (
     <section className="bg-green-900 py-12">
       <div className="container mx-auto px-4 text-white">
-        {/* Heading and Description */}
         <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-12">
-          {/* Left: Heading */}
           <div className="lg:w-1/2 text-left">
             <h1 className="text-4xl font-bold mb-4">What We Do?</h1>
           </div>
