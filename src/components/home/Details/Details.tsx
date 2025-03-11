@@ -13,7 +13,7 @@ export default function AboutUs() {
               </h1>
             </a>
             <div className="sm:col-span-9 md:col-span-8 lg:col-span-9">
-              <p className="text-base sm:text-xl text-gray-700 leading-relaxed">
+              <p className="text-sm sm:text-xl text-gray-700 leading-relaxed">
                 Biofield Power Pvt. Ltd. is a pioneering startup incubated at IIT Ropar and part of the prestigious
                 Agriculture and Water Technology Development Hub established in 2021 by the Department of Science & 
                 Technology, Government of India. With a mission to empower farmers and transform rural economies, we develop 
@@ -33,7 +33,7 @@ export default function AboutUs() {
                 Our Mission
               </h1>
             </a>
-            <p className="text-base sm:text-xl text-gray-700 leading-relaxed sm:col-span-9">
+            <p className="text-sm sm:text-xl text-gray-700 leading-relaxed sm:col-span-9">
               At Biofield Power, our mission is to improve farmers&apos; income while enabling the seamless adoption of
               advanced technologies in farmlands. By focusing on sustainable practices and cutting-edge solutions, we
               aim to digitalize rural economies and provide a robust platform for industries to achieve their Sustainable
