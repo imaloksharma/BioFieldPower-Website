@@ -43,14 +43,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* What We Do Section */}
-      {/* <div className="space-y-8 container mx-auto mt-14">
-        <h1 className="text-4xl font-bold text-green-800">What We Do?</h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos; 
-          livelihoods and promoting sustainable practices.
-        </p>
-      </div> */}
+      
     </section>
   );
 }
