@@ -5,20 +5,21 @@ import { useState } from "react";
 
 const AgriCard: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-
+  
   return (
     <div className="bg-green-100">
     <div className="max-w-5xl mx-auto p-6 bg-green-100  transition-all duration-300">
         <motion.div
           whileHover={{ scale: 0.95 }}
-          whileTap={{ scale: 0.95 }}
-        className="relative w-full"
-        >
-          <img
-            src="/solarPanel.png"
-            alt="Solar panels on farmland with crops"
-          className="w-full h-[500px] object-cover rounded-[20px]"
-          />
+          whileTap={{ scale: 0.95 }} 
+        className="relative w-full" 
+        > 
+          <img 
+          src="/solarPanel.png"
+          alt="Solar panels on farmland with crops"
+          className="w-full h-[500px] sm:h-[300px] md:h-[350px] lg:h-[500px] object-cover rounded-[20px]"
+      />
+
         </motion.div>
         <div className="flex flex-col  text-start p-6 border-4 rounded-lg border-green-800 bg-white mt-4">
         <h1 className="text-2xl sm:text-3xl font-black items-left text-green-900 mb-4">
