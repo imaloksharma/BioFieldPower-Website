@@ -10,7 +10,8 @@ import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Index from "./Hero/Index";
-import WhatWeDo from "./Whatwedo/whatwedo"; // Import the WhatWeDo component
+import WhatWeDo from "./Whatwedo/whatwedo";
+import Support from "./SupportSection/Support"; // Import Support section
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -26,6 +27,17 @@ export default function Home() {
       <section id="home" className="lg:p-2">
         <Index />
       </section>
+
+      {/* Support Section */}
+      <motion.section
+        id="support"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Support />
+      </motion.section>
+
       <motion.section
         id="about"
         ref={aboutRef}
@@ -57,6 +69,7 @@ export default function Home() {
         <AgriCard />
         <CarbonCredit />
       </motion.section>
+
       <motion.section
         id="blog"
         ref={blogRef}
