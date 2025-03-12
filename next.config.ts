@@ -8,9 +8,7 @@ const nextConfig: NextConfig = {
     EMAIL_PASS: process.env.EMAIL_PASS,
     EMAIL_FROM: process.env.EMAIL_FROM,
   },
-  eslint: {
-    ignoreDuringBuilds: true, // Disables ESLint during the build process
-  },
+  
 };
 
 export default nextConfig;
