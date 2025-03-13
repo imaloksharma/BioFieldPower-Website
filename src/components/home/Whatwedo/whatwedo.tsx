@@ -12,7 +12,7 @@ export default function WhatWeDo() {
           {/* Description Container */}
           <div className="lg:w-1/2 text-left">
             <p className="text-lg leading-relaxed">
-              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers' 
+              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos;
               livelihoods and promoting sustainable practices:
             </p>
           </div>
