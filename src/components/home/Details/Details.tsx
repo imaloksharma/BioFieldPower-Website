@@ -4,8 +4,8 @@ export default function AboutUs() {
   return (
     <section className="p-6 sm:p-10 bg-green-100">
       {/* About Us Section */}
-      <div className="container mx-auto mt-6 sm:mt-8 space-y-6 sm:space-y-8 max-w-6xl w-full"> 
-        <div className="border-4 border-green-800 rounded-lg p-4 sm:p-6 bg-green-50 w-full"> 
+      <div className="container mx-auto  sm:mt-8 space-y-6 sm:space-y-8 max-w-6xl w-full"> 
+        <div className=" p-4 sm:p-6  w-full"> 
           <div className="flex flex-col sm:grid sm:grid-cols-12 sm:items-center">
             <a href="/about" className="block sm:col-span-3 md:col-span-4 lg:col-span-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-green-800 text-start sm:text-left cursor-pointer hover:text-green-700 mb-4 sm:mb-6">
@@ -25,8 +25,8 @@ export default function AboutUs() {
       </div>
 
       {/* Our Mission Section */}
-      <div className="container mx-auto mt-6 sm:mt-8 space-y-6 sm:space-y-8 max-w-6xl w-full">
-        <div className="border-4 border-green-800 rounded-lg p-4 sm:p-6 bg-green-50 w-full">
+      <div className="container mx-auto sm:mt-8 space-y-6 sm:space-y-8 max-w-6xl w-full">
+        <div className=" p-4 sm:p-6 w-full">
           <div className="flex flex-col sm:grid sm:grid-cols-12 sm:items-center">
             <a href="/mission" className="block sm:col-span-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-green-800 text-start sm:text-left cursor-pointer hover:text-green-700 mb-4 sm:mb-6">
