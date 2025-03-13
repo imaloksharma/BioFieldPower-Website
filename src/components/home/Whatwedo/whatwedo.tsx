@@ -4,13 +4,15 @@ export default function WhatWeDo() {
       <div className="container mx-auto px-4 text-white">
         
         {/* Heading and Description */}
-        <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-12">
-          <div className="lg:w-1/2 text-left">
+        <div className="flex flex-col lg:flex-row items-left lg:justify-between mb-12">
+          {/* Heading Container */}
+          <div className="lg:w-1/2 text-left lg:ml-24"> {/* Shifted more to the right on PC */}
             <h1 className="text-4xl font-bold mb-4">What We Do?</h1>
           </div>
+          {/* Description Container */}
           <div className="lg:w-1/2 text-left">
             <p className="text-lg leading-relaxed">
-              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers' 
+              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos;
               livelihoods and promoting sustainable practices:
             </p>
           </div>
@@ -19,8 +21,8 @@ export default function WhatWeDo() {
         {/* Images + Progress Bar Container */}
         <div className="w-full max-w-5xl mx-auto relative">
           
-          {/* Images Row (Adjusted Left Image Closer in Mobile) */}
-          <div className="flex flex-row justify-between items-center gap-1 md:gap-8">
+          {/* Images Row (Reduced Gap in Mobile View) */}
+          <div className="flex flex-row justify-between items-center gap-0.2 md:gap-8">
             <img 
               src="/1.jpg" 
               alt="Biofuel Supply Chain" 
