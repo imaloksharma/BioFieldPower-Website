@@ -30,7 +30,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-12 bg-green-50">
+    <section className="py-12 bg-green-100">
       <h2 className="text-3xl font-bold text-green-800 text-center mb-8">What People Are Saying</h2>
       <div className="relative overflow-hidden">
         <div

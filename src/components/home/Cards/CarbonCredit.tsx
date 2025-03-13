@@ -8,8 +8,8 @@ const CarbonCredit: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-green-100">
-    <div className="max-w-5xl mx-auto p-6 bg-green-100 transition-all duration-300">
+    <div className="bg-white">
+    <div className="max-w-5xl mx-auto p-6 transition-all duration-300">
         <motion.div
           whileHover={{ scale: 0.95 }}
           whileTap={{ scale: 0.95 }}
@@ -18,14 +18,14 @@ const CarbonCredit: React.FC = () => {
           <img
             src="/CreditCarbon.png"
             alt="Carbon Credit"
-            className="w-full h-[500px] object-cover rounded-[20px]"
+            className="w-full h-[300px] sm:h-[300px] md:h-[350px] lg:h-[500px] object-cover rounded-[20px]"
             />
         </motion.div>
-        <div className="flex flex-col  text-start p-6 border-4 rounded-lg border-green-800 bg-white mt-4">
+        <div className="flex flex-col  text-start p-4 ">
         <h1 className="text-2xl sm:text-3xl font-black items-left text-green-900 mb-4">
             Carbon Credit
         </h1>
-            <p className="text-black text-xl">
+            <p className="text-black text-lg">
             A Carbon Credit is a tradable certificate or permit that represents the right to emit one metric ton of carbon dioxide CO<sub>2</sub> or an equivalent amount of other{" "}
             {isExpanded && (
               <>
