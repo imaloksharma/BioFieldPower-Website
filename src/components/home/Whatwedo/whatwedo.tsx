@@ -5,11 +5,9 @@ export default function WhatWeDo() {
         
         {/* Heading and Description */}
         <div className="flex flex-col lg:flex-row items-left lg:justify-between mb-12">
-          {/* Heading Container */}
-          <div className="lg:w-1/2 text-left lg:ml-24"> {/* Shifted more to the right on PC */}
+          <div className="lg:w-1/2 text-left">
             <h1 className="text-4xl font-bold mb-4">What We Do?</h1>
           </div>
-          {/* Description Container */}
           <div className="lg:w-1/2 text-left">
             <p className="text-lg leading-relaxed">
               At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos;
@@ -22,21 +20,21 @@ export default function WhatWeDo() {
         <div className="w-full max-w-5xl mx-auto relative">
           
           {/* Images Row (Reduced Gap in Mobile View) */}
-          <div className="flex flex-row justify-between items-center gap-0.2 md:gap-8">
+          <div className="flex flex-row justify-between items-center gap-1 sm:gap-0.5 md:gap-8">
             <img 
               src="/1.jpg" 
               alt="Biofuel Supply Chain" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto transform -translate-x-1 md:-translate-x-8" 
+              className="rounded-2xl shadow-xl w-1/3 sm:w-1/4 md:w-1/3 h-40 md:h-auto transform -translate-x-1 md:-translate-x-8" 
             />
             <img 
               src="/2.jpg" 
               alt="Agri-PV Systems" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto" 
+              className="rounded-2xl shadow-xl w-1/3 sm:w-1/4 md:w-1/3 h-40 md:h-auto" 
             />
             <img 
               src="/3.jpg" 
               alt="Carbon Credit" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto transform translate-x-1 md:translate-x-4" 
+              className="rounded-2xl shadow-xl w-1/3 sm:w-1/4 md:w-1/3 h-40 md:h-auto transform translate-x-1 md:translate-x-4" 
             />
           </div>
 
