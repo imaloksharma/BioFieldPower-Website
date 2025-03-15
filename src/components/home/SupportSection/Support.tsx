@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 import React from "react";
 import Image from "next/image";
 
@@ -64,4 +64,4 @@ export default function Support() {
     </section>
   );
 }
->>>>>>> 1cc89f79e6cf6e93638a67b0d5beccdc9e5d36c7
+

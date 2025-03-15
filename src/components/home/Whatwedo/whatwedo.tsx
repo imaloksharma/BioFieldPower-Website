@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 export default function WhatWeDo() {
   return (
     <section className="bg-green-900 py-12">
@@ -65,4 +64,4 @@ export default function WhatWeDo() {
     </section>
   );
 }
->>>>>>> 1cc89f79e6cf6e93638a67b0d5beccdc9e5d36c7
+
