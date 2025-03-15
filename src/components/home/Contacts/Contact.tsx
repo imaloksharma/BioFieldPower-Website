@@ -82,9 +82,9 @@ const ContactForm1: React.FC = () => {
   };
 
   return (
-    <div className="bg-black-100">
+    <div className="bg-green-50">
     <div className="container mx-auto px-2 py-8">
-      <div className="bg-green-50 border border-gray-400 rounded-[20px] shadow-md p-4 sm:p-6 md:p-8 w-full max-w-5xl mx-auto">
+      <div className="bg-green-50 p-4 sm:p-6 md:p-8 w-full max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div className="flex flex-col h-full px-2 sm:px-4 md:px-6">
             <div className="flex-grow text-center md:text-left">
@@ -112,7 +112,7 @@ const ContactForm1: React.FC = () => {
          </div>
 
 
-            <form onSubmit={handleSubmit} className="bg-white p-4 shadow-md rounded-md border border-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <form onSubmit={handleSubmit} className="p-4  grid grid-cols-1 sm:grid-cols-2 gap-3">
               {Object.entries(formData).map(([key, value]) => (
                 key !== "location" && (
                   <div key={key} className="col-span-2 sm:col-span-1">
@@ -157,7 +157,7 @@ const ContactForm1: React.FC = () => {
                 <iframe width="100%" height="100" title="Google Map" className="rounded-md border border-gray-300 shadow mt-2" src={`https://maps.google.com/maps?q=${encodeURIComponent(formData.location.trim() || "IIT Ropar")}&output=embed`}></iframe>
               </div>
                  <div className="col-span-2 flex justify-center md:justify-start">
-                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-600 text-white py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">
+                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-700 text-white py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">
                   {loading ? "Sending..." : "Submit"}
                 </motion.button>
               </div>
