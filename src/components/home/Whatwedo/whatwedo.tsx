@@ -1,3 +1,4 @@
+
 export default function WhatWeDo() {
   return (
     <section className="bg-green-900 py-12">
@@ -22,23 +23,24 @@ export default function WhatWeDo() {
         <div className="w-full max-w-5xl mx-auto relative">
           
           {/* Images Row (Reduced Gap in Mobile View) */}
-          <div className="flex flex-row justify-between items-center gap-0.2 md:gap-8">
-            <img 
-              src="/1.jpg" 
-              alt="Biofuel Supply Chain" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto transform -translate-x-1 md:-translate-x-8" 
-            />
-            <img 
-              src="/2.jpg" 
-              alt="Agri-PV Systems" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto" 
-            />
-            <img 
-              src="/3.jpg" 
-              alt="Carbon Credit" 
-              className="rounded-2xl shadow-xl w-1/4 md:w-1/3 h-40 md:h-auto transform translate-x-1 md:translate-x-4" 
-            />
-          </div>
+          <div className="flex flex-row justify-between items-center gap-1 ">
+  <img 
+    src="/1.jpg" 
+    alt="Biofuel Supply Chain" 
+    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
+  />
+  <img 
+    src="/2.jpg" 
+    alt="Agri-PV Systems" 
+    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
+  />
+  <img 
+    src="/3.jpg" 
+    alt="Carbon Credit" 
+    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
+  />
+</div>
+
 
           {/* Progress Indicator */}
           <div className="relative flex items-center justify-between w-full mt-6">
@@ -62,3 +64,4 @@ export default function WhatWeDo() {
     </section>
   );
 }
+

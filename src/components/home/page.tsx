@@ -12,6 +12,7 @@ import Header from "./Header/Header";
 import Index from "./Hero/Index";
 import WhatWeDo from "./Whatwedo/whatwedo";
 import Support from "./SupportSection/Support"; // Import Support section
+import Pindgrid from "./Pindgrid/pindgrid"; // Import Pindgrid section
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -27,6 +28,16 @@ export default function Home() {
       <section id="home" className="lg:p-2">
         <Index />
       </section>
+
+      {/* Pindgrid Section */}
+      <motion.section
+        id="pindgrid"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Pindgrid />
+      </motion.section>
 
       {/* Support Section */}
       <motion.section
