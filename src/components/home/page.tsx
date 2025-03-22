@@ -13,7 +13,7 @@ import Index from "./Hero/Index";
 import WhatWeDo from "./Whatwedo/whatwedo";
 import Support from "./SupportSection/Support";
 import Pindgrid from "./Pindgrid/pindgrid";
-import PindgridMobile from "./Pindgrid/PindgridMobile"; // Import mobile version
+import PindgridMobile from "./Pindgrid/PindGridMobile"; // Import mobile version
 
 export default function Home() {
   const aboutRef = useRef(null);
