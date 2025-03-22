@@ -1,3 +1,4 @@
+
 export default function WhatWeDo() {
   return (
     <section className="bg-green-900 py-12">
@@ -63,3 +64,4 @@ export default function WhatWeDo() {
     </section>
   );
 }
+
