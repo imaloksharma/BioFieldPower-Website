@@ -9,7 +9,7 @@ import ContactForm1 from "./Contacts/Contact";
 import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
-import Index from "./Hero/Index";
+// import Index from "./Hero/Index";
 import WhatWeDo from "./Whatwedo/whatwedo";
 import Support from "./SupportSection/Support";
 import Pindgrid from "./Pindgrid/pindgrid";
