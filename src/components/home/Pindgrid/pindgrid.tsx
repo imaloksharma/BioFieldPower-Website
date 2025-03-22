@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const PindGrid = () => {
   return (
-    <section className="relative flex justify-between items-center w-full h-[100vh] px-12 bg-white">
+    <section className="relative flex justify-between items-center w-full h-[100vh]  bg-white">
       {/* Left Semicircle with App Mockup */}
-      <div className="absolute left-10 top-0 h-[80vh] w-[30%] bg-green-900 rounded-r-full flex justify-center items-center">
+      <div className="absolute  top-0 md:h-[80vh] w-[25%] bg-green-900 rounded-r-[200px] flex justify-center items-center">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: -50 }}
