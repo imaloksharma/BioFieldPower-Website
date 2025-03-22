@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const PindGrid = () => {
   return (
-    <section className="relative flex justify-between items-center w-full h-[100vh]  bg-white">
+    <section className="relative flex flex-col md:flex-row justify-between items-center w-full h-[100vh] px-4 md:px-12 bg-white">
       {/* Left Semicircle with App Mockup */}
-      <div className="absolute  top-0 md:h-[80vh] w-[25%] bg-green-900 rounded-r-[200px] flex justify-center items-center">
+      <div className="absolute left-0 md:left-10 top-0 h-[80vh] w-full md:w-[30%] bg-green-900 rounded-r-full flex justify-center items-center">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: -50 }}
@@ -23,7 +23,7 @@ const PindGrid = () => {
       </div>
 
       {/* Flow Diagram (Farmer → Mover → Industry) */}
-      <div className="flex flex-col justify-center items-center w-2/3 space-y-8 relative">
+      <div className="flex flex-col justify-center items-center w-full md:w-2/3 space-y-8 relative">
         <div className="absolute top-[-320px] right-10 flex flex-col items-center">
           <Image src="/industry-icon.png" alt="Industry" width={300} height={300} />
           <span className="text-lg font-bold mt-2">3. Industry</span>
@@ -44,13 +44,13 @@ const PindGrid = () => {
         <div className="absolute top-[40px] right-[-150px]">
           <Image src="/2arrow.png" alt="Farmer to Mover" width={150} height={100} />
         </div>
-        <div className="absolute top-[-180px] left-[470px]">
+        <div className="absolute top-[-180px] left-[800px]">
           <Image src="/1arrow.png" alt="Industry to Farmer" width={50} height={50} />
         </div>
       </div>
 
       {/* Updated Title Section with Vertical Line */}
-      <div className="absolute bottom-10 left-12 flex items-center space-x-4">
+      <div className="absolute bottom-10 left-4 md:left-12 flex items-center space-x-4">
         <div className="h-20 w-1 bg-gray-400"></div>
         <div>
           <h2 className="text-3xl font-bold text-green-700">PindGrid™</h2>
@@ -59,7 +59,7 @@ const PindGrid = () => {
       </div>
 
       {/* Progress Indicator */}
-      <div className="absolute bottom-10 right-12 flex flex-col items-center space-y-3">
+      <div className="absolute bottom-10 right-4 md:right-12 flex flex-col items-center space-y-3">
         <div className="relative flex items-center justify-between w-80">
           {/* Progress bar */}
           <div className="absolute top-1/2 left-0 w-full h-[3px] bg-green-500 transform -translate-y-1/2"></div>
