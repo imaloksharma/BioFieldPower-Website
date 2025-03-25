@@ -1,67 +1,56 @@
+"use client";
 
-
-import React from "react";
+import React, { useEffect, useState, useRef } from "react"; 
 import Image from "next/image";
 
-export default function Support() {
+const SupportData = [
+  { name: "img1", image: "/icons/icon1-removebg-preview.png" },
+  { name: "img2", image: "/icons/icon2-removebg-preview.png" },
+  { name: "img3", image: "/icons/icon3-removebg-preview.png" },
+  { name: "img4", image: "/icons/icon4-removebg-preview.png" }
+];
+
+const Support = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const cardRef = useRef<HTMLDivElement | null>(null); 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % SupportData.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const getCardWidth = () => (cardRef.current ? cardRef.current.offsetWidth : 0);
+
   return (
-    <section className="bg-white w-full">
-      <div className="flex flex-row w-full">
-        {/* First Card - Technology Business Incubator Foundation */}
-        <div className="w-1/3 bg-green-800 text-white pt-6 pr-6 pb-6 pl-6 flex flex-col items-center justify-center h-[220px] sm:h-[300px]">
-          <h2 className="text-md md:text-2xl lg:text-3xl font-jakarta text-center mb-2">
-            Supported by
-          </h2>
-          <div className="mb-4 mt-2 flex justify-center">
-            <Image
-              src="/icons/icon1-removebg-preview.png"
-              alt="Icon 1"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="mt-2 text-left">
-            <h3 className="text-sm md:text-xl lg:text-2xl font-semibold leading-tight">
-              Technology Business<br />Incubator Foundation
-            </h3>
-          </div>
-        </div>
-
-        {/* Second Card - Indian Institute of Technology Ropar */}
-        <div className="w-1/3 bg-green-700 text-white p-6 flex flex-col items-center justify-center h-[220px] sm:h-[300px]">
-          <div className="mt-8 mb-4 flex justify-center">
-            <Image
-              src="/icons/icon2-removebg-preview.png"
-              alt="Icon 2"
-              width={130}
-              height={130}
-            />
-          </div>
-          <div className="mt-4 text-left">
-            <h3 className="text-sm md:text-xl lg:text-2xl font-semibold leading-tight">
-              Indian Institute of Technology<br />Ropar
-            </h3>
-          </div>
-        </div>
-
-        {/* Third Card - Startup India Scheme */}
-        <div className="w-1/3 bg-green-500 text-white p-6 flex flex-col items-center justify-center h-[220px] sm:h-[300px]">
-          <div className="mb-4 flex justify-center">
-            <Image
-              src="/icons/icon3-removebg-preview.png"
-              alt="Icon 3"
-              width={240}
-              height={240}
-            />
-          </div>
-          <div className="mt-6 text-left">
-            <h3 className="text-sm md:text-xl lg:text-2xl font-semibold leading-tight">
-              Startup India<br />Scheme
-            </h3>
-          </div>
+    <section className="py-12 bg-white">
+      <h2 className=" bg-gray-100 p-2 italic text-3xl font-bold text-green-800 text-center mb-8">Supported by</h2>
+      <div className="relative overflow-hidden w-full flex justify-center">
+        <div
+          className="flex transition-transform duration-500"
+          style={{ transform: `translateX(-${activeIndex * getCardWidth()}px)` }}
+        >
+          {SupportData.map((testimonial, index) => (
+            <div
+              key={index}
+              ref={index === 0 ? cardRef : null}
+              className="flex-shrink-0 w-80 bg-white rounded-lg p-6  sm:mx-4 text-center flex justify-center items-center"
+            >
+              <div className="flex flex-col items-center justify-center">
+              <Image 
+                  width={188} height={188}   
+                  src={testimonial.image} 
+                  alt={testimonial.name} 
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain" 
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
+export default Support;
