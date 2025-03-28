@@ -35,14 +35,14 @@ const Support = () => {
             <div
               key={index}
               ref={index === 0 ? cardRef : null}
-              className="flex-shrink-0 w-80 bg-white rounded-lg p-6  sm:mx-4 text-center flex justify-center items-center"
+              className="flex-shrink-0 w-70 bg-white rounded-lg p-6  sm:mx-4 text-center flex justify-center items-center"
             >
               <div className="flex flex-col items-center justify-center">
               <Image 
                   width={188} height={188}   
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain" 
+                  className="w-40 h-34 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain" 
                 />
               </div>
             </div>
