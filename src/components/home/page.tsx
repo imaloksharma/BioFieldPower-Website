@@ -14,6 +14,7 @@ import Support from "./SupportSection/Support";
 import Pindgrid from "./Pindgrid/pindgrid";
 import PindgridMobile from "./Pindgrid/PindGridMobile";
 import Impact from "./Impact/Impact"; // Import the Impact section
+import Ongoing from "./Ongoing/Ongoing"; // Import the Ongoing section
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -45,7 +46,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {isMobile ? <PindgridMobile /> : <Pindgrid />}
+         <Pindgrid />
       </motion.section>
 
       <motion.section
@@ -86,8 +87,18 @@ export default function Home() {
         <Biomass />
         <AgriCard />
         <CarbonCredit />
-        <Impact /> {/* Added Impact section here */}
       </motion.section>
+
+      <motion.section
+        id="ongoing"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Ongoing />
+      </motion.section>
+
+      <Impact /> {/* Impact section remains after Ongoing section */}
 
       <motion.section
         id="blog"
