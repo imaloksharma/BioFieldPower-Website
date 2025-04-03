@@ -9,7 +9,7 @@ const Impact = () => {
   ];
 
   return (
-    <section className="relative text-center py-20 md:py-40 bg-white">
+    <section className="relative text-center py-4 md:py-8 bg-white">
       {/* Content Container */}
       <div className="relative z-10">
         <h2 className="text-3xl md:text-5xl font-semibold text-green-700 mb-12 md:mb-24">

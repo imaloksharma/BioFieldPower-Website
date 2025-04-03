@@ -1,67 +1,49 @@
-
-export default function WhatWeDo() {
+export default function OurSolutions() {
   return (
-    <section className="bg-green-900 py-12">
-      <div className="container mx-auto px-4 text-white">
+    <section className="bg-green-50 py-12 relative">
+      <div className="container mx-auto px-4">
         
-        {/* Heading and Description */}
-        <div className="flex flex-col lg:flex-row items-left lg:justify-between mb-12">
-          {/* Heading Container */}
-          <div className="lg:w-1/2 text-left lg:ml-24"> {/* Shifted more to the right on PC */}
-            <h1 className="text-4xl font-bold mb-4">What We Do?</h1>
-          </div>
-          {/* Description Container */}
-          <div className="lg:w-1/2 text-left">
-            <p className="text-lg leading-relaxed">
-              At Biofield Power Pvt. Ltd., we focus on solving two interconnected challenges aimed at improving farmers&apos;
-              livelihoods and promoting sustainable practices:
-            </p>
+        {/* Centered Heading */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold text-green-600">Our Solutions</h1>
+        </div>
+
+        {/* Solutions Container */}
+        <div className="flex flex-col md:flex-row justify-center items-center py-4 gap-16 mb-16">
+          {/* Biomass Supply Chain */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4 mr-12">
+              <img 
+                src="/Group 97.svg" 
+                alt="Biomass Supply Chain Icon" 
+                className="w-full h-45"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Images + Progress Bar Container */}
-        <div className="w-full max-w-5xl mx-auto relative">
+        {/* Progress Bar with 2 dots */}
+        <div className="relative flex items-center justify-center w-full max-w-3xl mx-auto mt-6 mb-16 max-md:mb-8">
+          <div className="h-1 bg-green-600 w-[700px] rounded-full absolute left-[20px] top-[-10px] transform -translate-y-1/2 max-md:w-[190px] max-md:left-[100px]"></div>
+          <div className="relative flex w-[200px] mx-auto">
+            <div className="absolute left-[-270px] bottom-[3px] w-4 h-4 bg-green-600 rounded-full shadow-lg max-md:left-0"></div>
+            <div className="absolute left-[430px] w-4 h-4 bottom-[3px] bg-green-600 rounded-full shadow-lg max-md:left-auto max-md:right-0"></div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Bottom Illustrations */}
+      <div className="absolute bottom-0 right-0 max-md:left-0 max-md:overflow-x-hidden">
+        <div className="flex items-end max-md:justify-between">
+          <img src="/Wind Mill.svg" alt="Windmill Illustration" className="h-20 relative left-[190px] max-md:h-12 max-md:left-[160px]" />
           
-          {/* Images Row (Reduced Gap in Mobile View) */}
-          <div className="flex flex-row justify-between items-center gap-1 ">
-  <img 
-    src="/1.jpg" 
-    alt="Biofuel Supply Chain" 
-    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
-  />
-  <img 
-    src="/2.jpg" 
-    alt="Agri-PV Systems" 
-    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
-  />
-  <img 
-    src="/3.jpg" 
-    alt="Carbon Credit" 
-    className="rounded-2xl shadow-xl w-1/3 h-40 md:h-auto"
-  />
-</div>
-
-
-          {/* Progress Indicator */}
-          <div className="relative flex items-center justify-between w-full mt-6">
-            <div className="h-2 bg-green-700 w-full rounded-full absolute left-0 top-1/2 transform -translate-y-1/2"></div>
-            <div className="relative flex justify-between w-full">
-              <div className="w-4 h-4 bg-green-400 rounded-full shadow-lg"></div>
-              <div className="w-4 h-4 bg-green-400 rounded-full shadow-lg"></div>
-              <div className="w-4 h-4 bg-green-400 rounded-full shadow-lg"></div>
-            </div>
-          </div>
-
-          {/* Titles */}
-          <div className="flex flex-row justify-between w-full mt-4 text-lg font-semibold text-center">
-            <span className="w-1/3 text-left">Biofuel Supply Chain</span>
-            <span className="w-1/3 text-center">Agri-PV Systems</span>
-            <span className="w-1/3 text-right">Carbon Credit</span>
-          </div>
-
+          <img src="/Bale.svg" alt="Bale Illustration" className="h-8 relative bottom-[20px] left-[400px] max-md:h-6 max-md:left-[320px] max-md:relative max-md:mx-1" />
+          <img src="/Bale.svg" alt="Bale Illustration" className="h-8 relative left-[326px] max-md:h-6 max-md:left-[260px] max-md:relative max-md:mx-1" />
+          <img src="/Bale.svg" alt="Bale Illustration" className="h-8 relative left-[318px] max-md:h-6 max-md:left-[240px] max-md:relative max-md:mx-1" />
+          <img src="/Illustration.svg" alt="Landscape Illustration" className="h-14 relative left-[0px] max-md:h-10 max-md:left-0" />
+          <img src="/Wind Mill.svg" alt="Windmill Illustration" className="h-20 relative left-[-20px] max-md:h-18 " />
         </div>
       </div>
     </section>
   );
 }
-
