@@ -9,11 +9,11 @@ import ContactForm1 from "./Contacts/Contact";
 import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
-// import Index from "./Hero/Index";
 import WhatWeDo from "./Whatwedo/whatwedo";
 import Support from "./SupportSection/Support";
 import Pindgrid from "./Pindgrid/pindgrid";
-import PindgridMobile from "./Pindgrid/PindGridMobile"; // Import mobile version
+import PindgridMobile from "./Pindgrid/PindGridMobile";
+import Impact from "./Impact/Impact"; // Import the Impact section
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -23,7 +23,6 @@ export default function Home() {
   const isProductsInView = useInView(productsRef, { once: true, margin: "-50px" });
   const isBlogInView = useInView(blogRef, { once: true, margin: "-50px" });
 
-  // State to track if the user is on mobile
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -31,7 +30,7 @@ export default function Home() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -39,11 +38,7 @@ export default function Home() {
   return (
     <div className="scroll-smooth">
       <Header />
-      {/* <section id="home" className="lg:p-2">
-        <Index />
-      </section> */}
 
-      {/* Pindgrid Section (Switches between Desktop & Mobile version) */}
       <motion.section
         id="pindgrid"
         initial={{ opacity: 0, y: 50 }}
@@ -53,7 +48,6 @@ export default function Home() {
         {isMobile ? <PindgridMobile /> : <Pindgrid />}
       </motion.section>
 
-      {/* Support Section */}
       <motion.section
         id="support"
         initial={{ opacity: 0, y: 50 }}
@@ -73,7 +67,6 @@ export default function Home() {
         <Details />
       </motion.section>
 
-      {/* What We Do Section */}
       <motion.section
         id="whatwedo"
         initial={{ opacity: 0, y: 50 }}
@@ -93,6 +86,7 @@ export default function Home() {
         <Biomass />
         <AgriCard />
         <CarbonCredit />
+        <Impact /> {/* Added Impact section here */}
       </motion.section>
 
       <motion.section

@@ -53,7 +53,7 @@ const PindGrid = () => {
       <div className="absolute bottom-10 left-4 md:left-12 flex items-center space-x-4">
         <div className="h-20 w-1 bg-gray-400"></div>
         <div>
-          <h2 className="text-3xl font-bold text-green-700">PindGrid™</h2>
+          <h2 className="text-3xl font-bold text-green-700">PindGrid™️</h2>
           <p className="text-xl text-gray-600">Biomass Supply chain</p>
         </div>
       </div>
