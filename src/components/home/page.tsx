@@ -1,6 +1,6 @@
 "use client";
 import { motion, useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import Blog from "./Blog/Blog";
 import AgriCard from "./Cards/AgriPVCard";
 import Biomass from "./Cards/Biomass";
@@ -12,9 +12,8 @@ import Header from "./Header/Header";
 import WhatWeDo from "./Whatwedo/whatwedo";
 import Support from "./SupportSection/Support";
 import Pindgrid from "./Pindgrid/pindgrid";
-import PindgridMobile from "./Pindgrid/PindGridMobile";
-import Impact from "./Impact/Impact"; // Import the Impact section
-import Ongoing from "./Ongoing/Ongoing"; // Import the Ongoing section
+import Impact from "./Impact/Impact";
+import Ongoing from "./Ongoing/Ongoing";
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -23,18 +22,6 @@ export default function Home() {
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-50px" });
   const isProductsInView = useInView(productsRef, { once: true, margin: "-50px" });
   const isBlogInView = useInView(blogRef, { once: true, margin: "-50px" });
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="scroll-smooth">
@@ -98,7 +85,7 @@ export default function Home() {
         <Ongoing />
       </motion.section>
 
-      <Impact /> {/* Impact section remains after Ongoing section */}
+      <Impact />
 
       <motion.section
         id="blog"
