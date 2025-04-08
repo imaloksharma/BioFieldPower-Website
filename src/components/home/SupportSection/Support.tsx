@@ -7,7 +7,8 @@ const SupportData = [
   { name: "img1", image: "/icons/icon1-removebg-preview.png" },
   { name: "img2", image: "/icons/icon2-removebg-preview.png" },
   { name: "img3", image: "/icons/icon3-removebg-preview.png" },
-  { name: "img4", image: "/icons/icon4-removebg-preview.png" }
+  { name: "img4", image: "/icons/icon4-removebg-preview.png" },
+  { name: "img5", image: "/icons/icon55-removebg-preview.png" }
 ];
 
 const Support = () => {
@@ -25,7 +26,7 @@ const Support = () => {
 
   return (
     <section className="py-12 bg-white">
-      <h2 className=" bg-gray-100 p-2 italic text-3xl font-bold text-green-800 text-center mb-8">Supported by</h2>
+      <h2 className=" bg-gray-100 p-2 italic text-2xl sm:text-3xl font-bold text-green-800 text-center mb-8">Supported by</h2>
       <div className="relative overflow-hidden w-full flex justify-center">
         <div
           className="flex transition-transform duration-500"
@@ -42,7 +43,7 @@ const Support = () => {
                   width={188} height={188}   
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-40 h-34 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain" 
+                  className="w-40 h-34 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain " 
                 />
               </div>
             </div>
