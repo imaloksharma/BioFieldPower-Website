@@ -1,8 +1,10 @@
 export default function OngoingProjects() {
   return (
-    <div className="bg-white text-green-700 min-h-screen flex flex-col items-center p-4 py-10 relative">
+    <div className="bg-white text-green-700 flex flex-col items-center px-4 pt-6 pb-8 md:py-10 relative">
       {/* Responsive heading - smaller on mobile */}
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 md:mb-10">Ongoing Project</h1>
+      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-10">
+        Ongoing Project
+      </h1>
 
       {/* Desktop View - SVG Visible Only on PC */}
       <div className="w-full max-w-4xl flex justify-right relative right-[-90px] py-48 hidden md:flex">
@@ -29,27 +31,25 @@ export default function OngoingProjects() {
           alt="Text 3"
         />
 
-        {/* Straight Lines with Dots - Agri-PV Pilot (Left) */}
+        {/* Straight Lines with Dots */}
         <div className="absolute w-[60px] border-t-2 border-green-700 left-[20px] top-[380px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-600 rounded-full left-[80px] top-[376px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-700 rounded-full left-[10px] top-[376px]"></div>
 
-        {/* Straight Lines with Dots - PindGrid Pilot (Top) */}
         <div className="absolute w-[50px] border-t-2 border-green-700 left-[240px] top-[210px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-600 rounded-full left-[235px] top-[206px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-700 rounded-full left-[285px] top-[206px]"></div>
 
-        {/* Straight Lines with Dots - Biomass-to-Power Innovation (Right) */}
         <div className="absolute w-[50px] border-t-2 border-green-700 left-[650px] top-[420px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-700 rounded-full left-[640px] top-[416px]"></div>
         <div className="absolute w-[10px] h-[10px] bg-green-700 rounded-full left-[690px] top-[416px]"></div>
       </div>
 
-      {/* Mobile View - Hide Everything and Show Only SVG */}
-      <div className="w-full flex justify-center md:hidden">
+      {/* Mobile View - Optimized */}
+      <div className="w-full flex justify-center md:hidden mt-2">
         <img
           src="/Group_90.svg" 
-          className="w-[80%] h-auto"
+          className="w-[70%] h-auto"
           alt="Mobile Gears"
         />
       </div>

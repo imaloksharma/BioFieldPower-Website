@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const PindGrid = () => {
   return (
-    <section className="relative flex flex-col justify-center items-center w-full px-4 md:px-12 md:py-8 bg-white">
-      <div className="w-full flex flex-col md:flex-row justify-between items-center mb-6">
+<section className="relative flex flex-col justify-center items-center w-full px-2 py-4 sm:px-4 sm:py-6 md:px-12 md:py-8 bg-white">
+<div className="w-full flex flex-col md:flex-row justify-between items-center mb-6">
         {/* Left Side - Text and Button */}
         <div className="md:w-1/2 text-left">
           <p className="text-green-700 text-xl md:text-4xl font-semibold leading-tight">
@@ -18,7 +18,7 @@ const PindGrid = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
             src="/Pindgrid.svg"
             className="w-[90%] md:w-[80%] h-auto"
