@@ -1,3 +1,4 @@
+
 export default function OurSolutions() {
   return (
     <section className="bg-green-50 py-12 relative">
@@ -5,7 +6,7 @@ export default function OurSolutions() {
         
         {/* Centered Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-green-600">Our Solutions</h1>
+        <h1 className="text-3xl sm:text-4xl font-black items-left text-green-900 mb-4">Our Solutions</h1>
         </div>
 
         {/* Solutions Container */}
