@@ -63,20 +63,22 @@ export default function OngoingProjects() {
 
       {/* Mobile View - Optimized */}
       <div className="w-full flex justify-center md:hidden mt-2 relative">
-        <img
-          src="/Group_90.svg" 
-          className="w-[70%] h-auto"
-          alt="Mobile Gears"
-        />
-        
-        {/* Add rings for mobile view */}
-        <svg className="absolute inset-0 w-full h-full" style={{pointerEvents: 'none'}}>
-          {/* Adjust these positions based on your mobile layout */}
-          <circle cx="117" cy="99" r="22" fill="none" stroke="#0A5D2C" strokeWidth="3" />
-          <circle cx="164" cy="52" r="16" fill="none" stroke="#1E9D33" strokeWidth="3" />
-          <circle cx="210" cy="74" r="11" fill="none" stroke="#5DD56A" strokeWidth="2" />
-          <circle cx="181" cy="110" r="12" fill="none" stroke="#D1A215" strokeWidth="2" />
-        </svg>
+        <div className="relative w-[70%] h-auto">
+          <img
+            src="/Group_90.svg" 
+            className="w-full h-full object-contain"
+            alt="Mobile Gears"
+          />
+          
+          {/* Add rings for mobile view */}
+          <svg className="absolute inset-0 w-full h-full" style={{pointerEvents: 'none'}}>
+            {/* Adjust these positions based on your mobile layout */}
+            <circle cx="66" cy="106" r="22" fill="none" stroke="#0A5D2C" strokeWidth="3" />
+            <circle cx="116" cy="55" r="16" fill="none" stroke="#1E9D33" strokeWidth="3" />
+            <circle cx="166" cy="79" r="11" fill="none" stroke="#5DD56A" strokeWidth="2" />
+            <circle cx="135" cy="117" r="12" fill="none" stroke="#D1A215" strokeWidth="2" />
+          </svg>
+        </div>
       </div>
     </div>
   );
