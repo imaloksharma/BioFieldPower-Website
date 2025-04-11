@@ -76,9 +76,9 @@ export default function Home() {
         animate={isProductsInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        <Biomass />
+        {/* <Biomass />
         <AgriCard />
-        <CarbonCredit />
+        <CarbonCredit /> */}
       </motion.section>
 
       <motion.section
