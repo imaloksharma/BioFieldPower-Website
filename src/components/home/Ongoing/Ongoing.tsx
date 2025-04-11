@@ -65,7 +65,7 @@ export default function OngoingProjects() {
       <div className="w-full flex justify-end overflow-hidden md:hidden">
         <img
           src="/ongoing_mobile.jpg" 
-          className="w-[95%] h-auto object-contain mr-[-10px]"
+          className="w-[100%] h-auto object-contain"
           alt="Ongoing Projects Mobile"
         />
       </div>
