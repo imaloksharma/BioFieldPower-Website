@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const PindGrid = () => {
@@ -7,12 +6,12 @@ const PindGrid = () => {
       <div className="w-full flex flex-col md:flex-row justify-between items-center mb-6">
         {/* Right Side Image - Show above text in mobile */}
         <div className="order-1 md:order-2 w-full md:w-3/5 flex justify-center mb-4 md:mb-0">
-  <img
-    src="/Pindgrid.svg"
-    className="w-[90%] md:w-[90%] h-auto"
-    alt="Pindgrid"
-  />
-</div>
+          <img
+            src="/Pindgrid.svg"
+            className="w-[90%] md:w-[90%] h-auto"
+            alt="Pindgrid"
+          />
+        </div>
 
 
         {/* Left Side - Text and Button */}
@@ -20,16 +19,16 @@ const PindGrid = () => {
           <p className="text-green-700 italic text-xl md:text-4xl font-semibold leading-tight">
             "From <span className="font-bold">farm</span> to fuel,<br />
             the <span className="font-bold">biofuel supply<br />
-            chain</span> powers a<br />
+              chain</span> powers a<br />
             greener tomorrow."
           </p>
           <div className="mt-6">
-  <Link href="/contact">
-    <button className="px-4 py-2 md:px-6 md:py-3 bg-green-600 text-white rounded-md shadow-md hover:bg-green-700 text-sm md:text-base">
-      Contact
-    </button>
-  </Link>
-</div>
+            <Link href="/contact">
+              <button className="px-4 py-2 md:px-6 md:py-3 bg-green-600 text-white rounded-md shadow-md hover:bg-green-700 text-sm md:text-base">
+                Contact
+              </button>
+            </Link>
+          </div>
 
         </div>
       </div>
