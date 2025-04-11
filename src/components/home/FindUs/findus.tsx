@@ -14,17 +14,28 @@ const FindUs: React.FC = () => {
   }, []);
 
   return (
-    <div style={styles.container}>
+    <div style={{ 
+      ...styles.container, 
+      padding: isMobile ? "20px 10px" : styles.container.padding 
+    }}>
       <h2 style={styles.heading}>Find us</h2>
       <div style={isMobile ? styles.contentMobile : styles.content}>
-        <div style={isMobile ? styles.columnMobile : styles.column}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : {}), 
+          textAlign: isMobile ? "left" : "left" 
+        }}>
           <p style={styles.text}>
             Mr. Anmol Gupta
             <br />
             (Founder)
           </p>
         </div>
-        <div style={isMobile ? styles.columnMobile : styles.column}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : {}) , 
+          textAlign: isMobile ? "left" : "left"
+        }}>
           <p style={styles.text}>
             Biofield Power Pvt. Ltd.
             <br />
@@ -33,7 +44,11 @@ const FindUs: React.FC = () => {
             IIT Ropar, Rupnagar, Punjab, India. 140001
           </p>
         </div>
-        <div style={isMobile ? styles.columnMobile : {...styles.column, textAlign: "right"}}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : { textAlign: "right" }) ,
+          textAlign: isMobile ? "left" : "right"
+        }}>
           <p style={styles.text}>
             +91-85578-97582
             <br />
@@ -67,7 +82,7 @@ const styles = {
     display: "flex",
     flexDirection: "column" as const,
     gap: "20px",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   column: {
     fontSize: "18px",
@@ -76,7 +91,6 @@ const styles = {
   columnMobile: {
     fontSize: "18px",
     lineHeight: "1.5",
-    textAlign: "center" as const,
     marginBottom: "10px",
   },
   text: {

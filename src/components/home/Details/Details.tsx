@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutUs() {
   return (
-    <section className="p-6 sm:p-10 bg-green-100">
+    <section className="p-6 sm:p-10 bg-white">
       {/* About Us Section */}
       <div className="container mx-auto  sm:mt-8 space-y-6 sm:space-y-8 max-w-6xl w-full"> 
         <div className=" p-4 sm:p-6  w-full"> 
