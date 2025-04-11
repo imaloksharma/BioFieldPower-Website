@@ -16,7 +16,7 @@ const FindUs: React.FC = () => {
   return (
     <div style={{ 
       ...styles.container, 
-      padding: isMobile ? "20px" : styles.container.padding 
+      padding: isMobile ? "20px 40px" : styles.container.padding 
     }}>
       <h2 style={isMobile ? styles.headingMobile : styles.heading}>Find us</h2>
       <div style={isMobile ? styles.contentMobile : styles.content}>
