@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 
 const FindUs: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     handleResize(); // Check on initial load
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -16,7 +16,7 @@ const FindUs: React.FC = () => {
   return (
     <div style={{ 
       ...styles.container, 
-      padding: isMobile ? "20px 10px" : styles.container.padding 
+      padding: isMobile ? "40px" : styles.container.padding 
     }}>
       <h2 style={styles.heading}>Find us</h2>
       <div style={isMobile ? styles.contentMobile : styles.content}>
@@ -39,7 +39,7 @@ const FindUs: React.FC = () => {
           <p style={styles.text}>
             Biofield Power Pvt. Ltd.
             <br />
-            ROOM NO– 316/317, 3 FLOOR, M VISVESVARAYA,
+            ROOM NO- 316/317, 3 FLOOR, M VISVESVARAYA,
             <br />
             IIT Ropar, Rupnagar, Punjab, India. 140001
           </p>
@@ -64,7 +64,7 @@ const styles = {
   container: {
     backgroundColor: "#1D5E1E",
     color: "#FFFFFF",
-    padding: "40px 20px",
+    padding: "40px 130px",
     fontFamily: "Montserrat, sans-serif" as const,
   },
   heading: {
@@ -75,7 +75,7 @@ const styles = {
   content: {
     display: "grid",
     gridTemplateColumns: "1fr 1.5fr 1fr",
-    gap: "40px",
+    gap: "20px", // Reduced gap
     alignItems: "start",
   },
   contentMobile: {
