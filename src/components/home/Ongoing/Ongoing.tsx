@@ -2,7 +2,7 @@ export default function OngoingProjects() {
   return (
     <div className="bg-white text-green-700 flex flex-col items-center px-0 pt-0 pb-0 md:px-4 md:py-3 relative">
       {/* Heading visible only on desktop */}
-      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-1 hidden md:block">
+      <h1 className="mt-4 text-3xl md:text-6xl font-bold mb-4 md:mb-1 hidden md:block">
         Ongoing Project
       </h1>
       
@@ -65,7 +65,7 @@ export default function OngoingProjects() {
       <div className="w-full flex justify-end overflow-hidden md:hidden">
         <img
           src="/ongoing_mobile.jpg" 
-          className="w-[95%] h-auto object-contain mr-[-10px]"
+          className="w-[100%] h-auto object-contain"
           alt="Ongoing Projects Mobile"
         />
       </div>
