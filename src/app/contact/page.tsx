@@ -91,7 +91,7 @@ const ContactForm1: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div className="flex flex-col h-full px-2 sm:px-4 md:px-6">
             <div className="flex-grow text-center md:text-left">
-              <h1 className="pt-2 text-3xl sm:text-4xl md:text-4xl text-green-800 mb-4 font-semibold">
+              <h1 className="pt-2 text-3xl sm:text-4xl md:text-4xl text-green-600 mb-4 font-semibold">
                 Contact Us
               </h1>
             </div>
@@ -115,7 +115,7 @@ const ContactForm1: React.FC = () => {
          </div>
 
 
-            <form onSubmit={handleSubmit} className="bg-white p-4 shadow-md rounded-md border border-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <form onSubmit={handleSubmit} className="bg-white p-4 shadow-lg rounded-md border border-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {Object.entries(formData).map(([key, value]) => (
                 key !== "location" && (
                   <div key={key} className="col-span-2 sm:col-span-1">
@@ -128,7 +128,7 @@ const ContactForm1: React.FC = () => {
                         value={value}
                         onChange={handleChange}
                         placeholder={`Enter your ${key}`}
-                        className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 h-8 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                        className="w-full bg-gray-100 shadow-lg text-gray-800 border-gray-200 rounded-md p-1 h-8 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                       />
                     ) : (
                       <input
@@ -137,7 +137,7 @@ const ContactForm1: React.FC = () => {
                         value={value}
                         onChange={handleChange}
                         placeholder={`Enter your ${key}`}
-                        className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                        className="w-full bg-gray-100 shadow-lg text-gray-800 border-gray-200 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                       />
                     )}
                     {errors[key] && <p className="text-red-500 text-xs mt-1">{errors[key]}</p>}
@@ -153,11 +153,11 @@ const ContactForm1: React.FC = () => {
                   value={formData.location}
                   onChange={handleChange}
                   placeholder="Enter your city"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-gray-100 text-gray-800 shadow-lg border-gray-200 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
                 </div>
                 <div className="col-span-1">
-                <iframe width="100%" height="100" title="Google Map" className="rounded-md border border-gray-300 shadow mt-2" src={`https://maps.google.com/maps?q=${encodeURIComponent(formData.location.trim() || "IIT Ropar")}&output=embed`}></iframe>
+                <iframe width="100%" height="100" title="Google Map" className="rounded-md border border-gray-200 shadow mt-2" src={`https://maps.google.com/maps?q=${encodeURIComponent(formData.location.trim() || "IIT Ropar")}&output=embed`}></iframe>
               </div>
                  <div className="col-span-2 flex justify-center md:justify-start">
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-600 text-white py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">

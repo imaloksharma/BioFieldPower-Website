@@ -1,8 +1,8 @@
 export default function OngoingProjects() {
   return (
-    <div className="bg-white text-green-700 flex flex-col items-center px-4 pt-5 pb-8 md:py-3 relative">
-      {/* Responsive heading - smaller on mobile */}
-      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-1">
+    <div className="bg-white text-green-700 flex flex-col items-center px-0 pt-0 pb-0 md:px-4 md:py-3 relative">
+      {/* Heading visible only on desktop */}
+      <h1 className="mt-4 text-3xl md:text-6xl font-bold mb-4 md:mb-1 hidden md:block">
         Ongoing Project
       </h1>
       
@@ -61,24 +61,13 @@ export default function OngoingProjects() {
         <div className="absolute w-[10px] h-[10px] bg-green-700 rounded-full left-[690px] top-[416px]"></div>
       </div>
 
-      {/* Mobile View - Optimized */}
-      <div className="w-full flex justify-center md:hidden mt-2 relative">
-        <div className="relative w-[70%] h-auto">
-          <img
-            src="/Group_90.svg" 
-            className="w-full h-full object-contain"
-            alt="Mobile Gears"
-          />
-          
-          {/* Add rings for mobile view */}
-          <svg className="absolute inset-0 w-full h-full" style={{pointerEvents: 'none'}}>
-            {/* Adjust these positions based on your mobile layout */}
-            <circle cx="66" cy="106" r="22" fill="none" stroke="#0A5D2C" strokeWidth="3" />
-            <circle cx="116" cy="55" r="16" fill="none" stroke="#1E9D33" strokeWidth="3" />
-            <circle cx="166" cy="79" r="11" fill="none" stroke="#5DD56A" strokeWidth="2" />
-            <circle cx="135" cy="117" r="12" fill="none" stroke="#D1A215" strokeWidth="2" />
-          </svg>
-        </div>
+      {/* Mobile View - Just show ongoing_mobile.png */}
+      <div className="w-full flex justify-end overflow-hidden md:hidden">
+        <img
+          src="/ongoing_mobile.jpg" 
+          className="w-[100%] h-auto object-contain"
+          alt="Ongoing Projects Mobile"
+        />
       </div>
     </div>
   );

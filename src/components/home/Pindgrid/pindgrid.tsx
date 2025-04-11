@@ -17,10 +17,10 @@ const PindGrid = () => {
         {/* Left Side - Text and Button */}
         <div className="order-2 md:order-1 md:w-2/5 text-center md:text-start p-4 md:p-10">
           <p className="text-green-700 italic text-xl md:text-4xl font-semibold leading-tight">
-            "From <span className="font-bold">farm</span> to fuel,<br />
+            &quot;From <span className="font-bold">farm</span> to fuel,<br />
             the <span className="font-bold">biofuel supply<br />
               chain</span> powers a<br />
-            greener tomorrow."
+            greener tomorrow.&quot;
           </p>
           <div className="mt-6">
             <Link href="/contact">
