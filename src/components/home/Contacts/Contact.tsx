@@ -6,7 +6,7 @@ import { CalendarIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 
 interface FormData {
-  fullName: string;
+  Name: string;
   email: string;
   phone: string;
   companyName: string;
@@ -18,7 +18,7 @@ interface FormData {
 
 const ContactForm1: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    fullName: "",
+    Name: "",
     email: "",
     phone: "",
     companyName: "",
@@ -35,7 +35,7 @@ const ContactForm1: React.FC = () => {
 
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {};
-    if (!formData.fullName) newErrors.fullName = "Full Name is required";
+    if (!formData.Name) newErrors.Name = "Full Name is required";
     if (!formData.email) newErrors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Invalid email format";
     if (!formData.message) newErrors.message = "Message cannot be empty";
@@ -61,7 +61,7 @@ const ContactForm1: React.FC = () => {
       if (response.status === 200) {
         setSuccess(true);
         setFormData({
-          fullName: "",
+          Name: "",
           email: "",
           phone: "",
           companyName: "",
@@ -84,14 +84,14 @@ const ContactForm1: React.FC = () => {
   return (
     <div className="bg-green-50">
     <div className="container mx-auto px-2 py-8">
-      <div className="bg-green-50 p-4 sm:p-6 md:p-8 w-full max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <div className="flex flex-col h-full px-2 sm:px-4 md:px-6">
-            <div className="flex-grow text-center md:text-left">
-              <h1 className="pt-2 text-3xl sm:text-4xl md:text-4xl text-green-800 mb-4 font-semibold">
+    <div className="flex-grow text-center md:text-center">
+              <h1 className="pt-2 text-3xl sm:text-4xl md:text-4xl text-green-600 mb-2 font-semibold justify-center">
                 Contact Us
               </h1>
             </div>
+      <div className="bg-green-50 p-4 sm:p-6 md:p-8 w-full max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="flex flex-col h-full px-2 sm:px-4 md:px-6">
             <div className="justify-center flex-grow text-center md:text-left flex flex-col items-center">
             <Image width={100} height={100}
          src="/contactperson.png"
@@ -115,7 +115,7 @@ const ContactForm1: React.FC = () => {
             <form onSubmit={handleSubmit} className="p-4  grid grid-cols-1 sm:grid-cols-2 gap-3">
               {Object.entries(formData).map(([key, value]) => (
                 key !== "location" && (
-                  <div key={key} className="col-span-2 sm:col-span-1">
+                  <div key={key} className="col-span-2 sm:col-span-1 ">
                     <label className="block text-gray-800 text-sm font-medium mb-1">
                       {key.replace(/([A-Z])/g, " $1").trim().replace(/^./, (str) => str.toUpperCase())}
                     </label>
@@ -125,7 +125,7 @@ const ContactForm1: React.FC = () => {
                         value={value}
                         onChange={handleChange}
                         placeholder={`Enter your ${key}`}
-                        className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 h-8 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                        className="w-full bg-gray-100 shadow-lg text-gray-800 border-gray-200 rounded-md p-1 h-8 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                       />
                     ) : (
                       <input
@@ -134,7 +134,7 @@ const ContactForm1: React.FC = () => {
                         value={value}
                         onChange={handleChange}
                         placeholder={`Enter your ${key}`}
-                        className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                        className="w-full bg-gray-100 shadow-lg text-gray-800 border-gray-200 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                       />
                     )}
                     {errors[key] && <p className="text-red-500 text-xs mt-1">{errors[key]}</p>}
@@ -150,14 +150,14 @@ const ContactForm1: React.FC = () => {
                   value={formData.location}
                   onChange={handleChange}
                   placeholder="Enter your city"
-                  className="w-full bg-gray-100 text-gray-800 border-gray-300 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full bg-gray-100 shadow-lg text-gray-800 border-gray-200 rounded-md p-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
                 />
                 </div>
                 <div className="col-span-1">
-                <iframe width="100%" height="100" title="Google Map" className="rounded-md border border-gray-300 shadow mt-2" src={`https://maps.google.com/maps?q=${encodeURIComponent(formData.location.trim() || "IIT Ropar")}&output=embed`}></iframe>
+                <iframe width="100%" height="100" title="Google Map" className="rounded-md border border-gray-200 shadow-lg mt-2" src={`https://maps.google.com/maps?q=${encodeURIComponent(formData.location.trim() || "IIT Ropar")}&output=embed`}></iframe>
               </div>
                  <div className="col-span-2 flex justify-center md:justify-start">
-                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-700 text-white py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">
+                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-green-700 text-white mt-2 py-2 px-4 text-sm rounded-md shadow hover:bg-green-900 transition">
                   {loading ? "Sending..." : "Submit"}
                 </motion.button>
               </div>
