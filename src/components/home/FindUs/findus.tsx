@@ -16,16 +16,16 @@ const FindUs: React.FC = () => {
   return (
     <div style={{ 
       ...styles.container, 
-      padding: isMobile ? "40px" : styles.container.padding 
+      padding: isMobile ? "20px" : styles.container.padding 
     }}>
-      <h2 style={styles.heading}>Find us</h2>
+      <h2 style={isMobile ? styles.headingMobile : styles.heading}>Find us</h2>
       <div style={isMobile ? styles.contentMobile : styles.content}>
         <div style={{ 
           ...styles.column, 
           ...(isMobile ? styles.columnMobile : {}), 
           textAlign: isMobile ? "left" : "left" 
         }}>
-          <p style={styles.text}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             Mr. Anmol Gupta
             <br />
             (Founder)
@@ -36,7 +36,7 @@ const FindUs: React.FC = () => {
           ...(isMobile ? styles.columnMobile : {}) , 
           textAlign: isMobile ? "left" : "left"
         }}>
-          <p style={styles.text}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             Biofield Power Pvt. Ltd.
             <br />
             ROOM NO- 316/317, 3 FLOOR, M VISVESVARAYA,
@@ -49,7 +49,7 @@ const FindUs: React.FC = () => {
           ...(isMobile ? styles.columnMobile : { textAlign: "right" }) ,
           textAlign: isMobile ? "left" : "right"
         }}>
-          <p style={styles.text}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             +91-85578-97582
             <br />
             info@biofieldpower.com
@@ -72,6 +72,11 @@ const styles = {
     fontWeight: "600",
     marginBottom: "30px",
   },
+  headingMobile: {
+    fontSize: "24px",
+    fontWeight: "600",
+    marginBottom: "20px",
+  },
   content: {
     display: "grid",
     gridTemplateColumns: "1fr 1.5fr 1fr",
@@ -81,7 +86,7 @@ const styles = {
   contentMobile: {
     display: "flex",
     flexDirection: "column" as const,
-    gap: "20px",
+    gap: "10px",
     alignItems: "flex-start",
   },
   column: {
@@ -95,6 +100,10 @@ const styles = {
   },
   text: {
     margin: 0,
+  },
+  textMobile: {
+    margin: 0,
+    fontSize: "16px",
   },
 };
 
