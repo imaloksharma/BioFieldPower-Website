@@ -2,39 +2,54 @@ import React, { useEffect, useState } from "react";
 
 const FindUs: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     handleResize(); // Check on initial load
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.heading}>Find us</h2>
+    <div style={{ 
+      ...styles.container, 
+      padding: isMobile ? "20px 40px" : styles.container.padding 
+    }}>
+      <h2 style={isMobile ? styles.headingMobile : styles.heading}>Find us</h2>
       <div style={isMobile ? styles.contentMobile : styles.content}>
-        <div style={isMobile ? styles.columnMobile : styles.column}>
-          <p style={styles.text}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : {}), 
+          textAlign: isMobile ? "left" : "left" 
+        }}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             Mr. Anmol Gupta
             <br />
             (Founder)
           </p>
         </div>
-        <div style={isMobile ? styles.columnMobile : styles.column}>
-          <p style={styles.text}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : {}) , 
+          textAlign: isMobile ? "left" : "left"
+        }}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             Biofield Power Pvt. Ltd.
             <br />
-            ROOM NO– 316/317, 3 FLOOR, M VISVESVARAYA,
+            ROOM NO- 316/317, 3 FLOOR, M VISVESVARAYA,
             <br />
             IIT Ropar, Rupnagar, Punjab, India. 140001
           </p>
         </div>
-        <div style={isMobile ? styles.columnMobile : {...styles.column, textAlign: "right"}}>
-          <p style={styles.text}>
+        <div style={{ 
+          ...styles.column, 
+          ...(isMobile ? styles.columnMobile : { textAlign: "right" }) ,
+          textAlign: isMobile ? "left" : "right"
+        }}>
+          <p style={isMobile ? styles.textMobile : styles.text}>
             +91-85578-97582
             <br />
             info@biofieldpower.com
@@ -49,7 +64,7 @@ const styles = {
   container: {
     backgroundColor: "#1D5E1E",
     color: "#FFFFFF",
-    padding: "40px 20px",
+    padding: "40px 130px",
     fontFamily: "Montserrat, sans-serif" as const,
   },
   heading: {
@@ -57,17 +72,22 @@ const styles = {
     fontWeight: "600",
     marginBottom: "30px",
   },
+  headingMobile: {
+    fontSize: "24px",
+    fontWeight: "600",
+    marginBottom: "20px",
+  },
   content: {
     display: "grid",
     gridTemplateColumns: "1fr 1.5fr 1fr",
-    gap: "40px",
+    gap: "20px", // Reduced gap
     alignItems: "start",
   },
   contentMobile: {
     display: "flex",
     flexDirection: "column" as const,
-    gap: "20px",
-    alignItems: "center",
+    gap: "10px",
+    alignItems: "flex-start",
   },
   column: {
     fontSize: "18px",
@@ -76,11 +96,14 @@ const styles = {
   columnMobile: {
     fontSize: "18px",
     lineHeight: "1.5",
-    textAlign: "center" as const,
     marginBottom: "10px",
   },
   text: {
     margin: 0,
+  },
+  textMobile: {
+    margin: 0,
+    fontSize: "16px",
   },
 };
 

@@ -5,7 +5,7 @@ export default function OngoingProjects() {
       <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-1 hidden md:block">
         Ongoing Project
       </h1>
-
+      
       {/* Desktop View - SVG Visible Only on PC */}
       <div className="w-full max-w-4xl flex justify-right relative right-[-90px] py-48 hidden md:flex">
         {/* Base SVG with gears */}
@@ -65,7 +65,7 @@ export default function OngoingProjects() {
       <div className="w-full flex justify-end overflow-hidden md:hidden">
         <img
           src="/ongoing_mobile.jpg" 
-          className="w-[95%] h-auto object-contain mr-[-10px]"
+          className="w-[100%] h-auto object-contain"
           alt="Ongoing Projects Mobile"
         />
       </div>

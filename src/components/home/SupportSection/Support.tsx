@@ -8,7 +8,7 @@ const SupportData = [
   { name: "img2", image: "/icons/icon2-removebg-preview.png" },
   { name: "img3", image: "/icons/icon3-removebg-preview.png" },
   { name: "img4", image: "/icons/icon4-removebg-preview.png" },
-  { name: "img5", image: "/icons/icon55-removebg-preview.png" }
+  { name: "img5", image: "/icons/img5.png" }
 ];
 
 const Support = () => {
@@ -25,25 +25,26 @@ const Support = () => {
   const getCardWidth = () => (cardRef.current ? cardRef.current.offsetWidth : 0);
 
   return (
-    <section className="py-12 bg-white">
-      <h2 className=" bg-gray-100 p-2 italic text-2xl sm:text-3xl font-bold text-green-800 text-center mb-8">Supported by</h2>
-      <div className="relative overflow-hidden w-full flex justify-center">
+    <section className="py-2 md:py-12 bg-green-100">
+
+      <h2 className="  bg-green-100 p-2 italic text-2xl sm:text-4xl font-bold text-green-600 text-center mb-2 md:mb-8">Supported by</h2>
+      <div className="relative overflow-hidden w-full flex justify-center  bg-green-100">
         <div
-          className="flex transition-transform duration-500"
+          className="flex transition-transform duration-500  bg-green-100"
           style={{ transform: `translateX(-${activeIndex * getCardWidth()}px)` }}
         >
           {SupportData.map((testimonial, index) => (
             <div
               key={index}
               ref={index === 0 ? cardRef : null}
-              className="flex-shrink-0 w-70 bg-white rounded-lg p-6  sm:mx-4 text-center flex justify-center items-center"
+              className="flex-shrink-0 w-70  bg-green-100 rounded-lg p-6  sm:mx-4 text-center flex justify-center items-center"
             >
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center  bg-green-100">
               <Image 
                   width={188} height={188}   
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-40 h-34 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain " 
+                  className="w-40 h-34 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain  bg-green-100" 
                 />
               </div>
             </div>

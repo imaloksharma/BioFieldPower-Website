@@ -5,9 +5,6 @@ import { useRef } from "react";
 
 // Components
 import Blog from "./Blog/Blog";
-import AgriCard from "./Cards/AgriPVCard";
-import Biomass from "./Cards/Biomass";
-import CarbonCredit from "./Cards/CarbonCredit";
 import ContactForm1 from "./Contacts/Contact";
 import Details from "./Details/Details";
 import Footer from "./Footer/Footer";
@@ -76,9 +73,9 @@ export default function Home() {
         animate={isProductsInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        <Biomass />
+        {/* <Biomass />
         <AgriCard />
-        <CarbonCredit />
+        <CarbonCredit /> */}
       </motion.section>
 
       <motion.section
