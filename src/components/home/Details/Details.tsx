@@ -13,8 +13,8 @@ const Details = () => {
         <Image
           src="/aboutus_mobile.png"
           alt="About Us Mobile"
-          width={400}
-          height={300}
+          width={650}
+          height={600}
           className="mx-auto"
         />
       </div>
