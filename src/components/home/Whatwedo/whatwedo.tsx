@@ -17,7 +17,7 @@ export default function OurSolutions() {
               <img 
                 src="/Group 97.svg" 
                 alt="Biomass Supply Chain Icon" 
-                className="w-full h-45"
+                className="w-90% h-42"
               />
             </div>
           </div>

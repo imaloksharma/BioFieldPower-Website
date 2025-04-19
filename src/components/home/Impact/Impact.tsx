@@ -103,9 +103,9 @@ export default function Impact() {
   const imageFilenames = ['img11.svg', 'img12.svg', 'img13.svg', 'img14.svg']
 
   return (
-    <div className="mb-4">
+    <div className="m-4">
       <div className="container mx-auto px-2 py-4 max-h-[700px] rounded-md">
-        <div className="bg-green-800 flex flex-col md:flex-row p-6 sm:p-10 md:p-16 text-white rounded-lg">
+        <div className="bg-green-800 flex flex-col md:flex-row p-6 sm:p-10 md:p-16 text-white rounded-lg ">
           
           {/* Left Side */}
           <div className="md:w-2/3 flex flex-col justify-center md:justify-between items-center md:items-start space-y-4 sm:space-y-6 p-4 sm:p-6 md:p-8">
@@ -120,11 +120,11 @@ export default function Impact() {
 
 
           {/* Right Side (scrollable) */}
-          <div className="md:w-1/3 max-h-[400px] sm:max-h-[500px] p-4 sm:p-0 md:max-h-[560px] overflow-y-auto mt-6 md:mt-0 space-y-6 sm:space-y-8 md:space-y-10 pr-2 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">
+          <div className="justify-center items-center max-h-[400px] sm:max-h-[500px] p-8 ml-6 sm:p-0 md:max-h-[560px] overflow-y-auto  space-y-6 sm:space-y-8 md:space-y-10 pr-2 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">
             {imageFilenames.map((filename, index) => (
               <div
                 key={filename}
-                className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-md flex items-center gap-4 sm:gap-6 md:gap-8 w-12/13 sm:w-10/12 md:w-auto"
+                className="md:w-9/10 w-5/6 bg-white rounded-xl justify-center p-4 md:p-6 shadow-md flex items-center gap-4 sm:gap-6 md:gap-8 w-8/13 sm:w-8/12"
                 >
                 <div>
                 <Image
@@ -132,14 +132,12 @@ export default function Impact() {
                   alt={`Metric ${index + 1}`}
                   width={180}
                   height={80}
-                  className="rounded-md object-contain md:w-full md:h-auto "
+                  className="rounded-md object-contain md:w-full md:h-auto  justify-center items-center"
                 />
-
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </div>
