@@ -5,7 +5,7 @@ const PindGrid = () => {
     <section className="relative flex flex-col justify-center items-center w-full px-2 py-4 sm:px-4 sm:py-6 md:px-12 md:py-8 bg-white">
       <div className="w-full flex flex-col md:flex-row justify-between items-center mb-6">
         {/* Right Side Image - Show above text in mobile */}
-        <div className="order-1 md:order-2 w-full md:w-3/5 flex justify-center mb-4 md:mb-0">
+        <div className="order-1 md:order-2 w-full md:w-4/5 flex justify-center mb-4 md:mb-0">
           <img
             src="/Pindgrid.svg"
             className="w-[90%] md:w-[90%] h-auto"
