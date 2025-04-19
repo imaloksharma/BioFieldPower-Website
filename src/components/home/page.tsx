@@ -77,7 +77,7 @@ export default function Home() {
         <AgriCard />
         <CarbonCredit /> */}
       </motion.section>
-
+      <Impact />
       <motion.section
         id="ongoing"
         initial={{ opacity: 0, y: 50 }}
@@ -87,7 +87,6 @@ export default function Home() {
         <Ongoing />
       </motion.section>
 
-      <Impact />
 
       <motion.section
         id="blog"
