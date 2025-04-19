@@ -1,12 +1,12 @@
 
 export default function OurSolutions() {
   return (
-    <section className="bg-green-50 py-12 relative">
+    <section className="bg-green-50 py-8 relative">
       <div className="container mx-auto px-4">
         
         {/* Centered Heading */}
         <div className="text-center mb-16">
-        <h1 className="text-3xl sm:text-5xl font-black items-left text-green-600 mb-4">Our Solutions</h1>
+        <h1 className="text-3xl sm:text-5xl font-black items-left text-green-600">Our Solutions</h1>
         </div>
 
         {/* Solutions Container */}
@@ -17,7 +17,7 @@ export default function OurSolutions() {
               <img 
                 src="/Group 97.svg" 
                 alt="Biomass Supply Chain Icon" 
-                className="w-full h-45"
+                className="w-90% h-42"
               />
             </div>
           </div>

@@ -25,9 +25,9 @@ const Support = () => {
   const getCardWidth = () => (cardRef.current ? cardRef.current.offsetWidth : 0);
 
   return (
-    <section className="py-2 md:py-12 bg-green-100">
+    <section className="py-2 md:py-10 bg-green-100">
 
-      <h2 className="  bg-green-100 p-2 italic text-2xl sm:text-4xl font-bold text-green-600 text-center mb-2 md:mb-8">Supported by</h2>
+      <h1 className="  bg-green-100 p-2 italic text-2xl sm:text-5xl font-bold text-green-700 text-center mb-2 md:mb-8">Supported by</h1>
       <div className="relative overflow-hidden w-full flex justify-center  bg-green-100">
         <div
           className="flex transition-transform duration-500  bg-green-100"
