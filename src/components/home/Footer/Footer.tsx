@@ -1,85 +1,40 @@
-import Link  from 'next/link';
-import { FaLinkedin, FaInstagram, FaTwitter, FaPhone } from 'react-icons/fa';
-import Image from "next/image";
+import React from "react";
 
 const Footer = () => {
   return (
-    
-    <footer className="py-10 bg-gray-100">
-      <div className="bg-grey-50 container mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6">
-          <div className="flex flex-col items-start">
-            <div className="flex items-center space-x-2 text-green-700">
-              <Image width={80} height={80} className="h-14 w-auto" src="/Img/logo.png" alt="Logo" />
-              <span className="text-xl font-bold">Biofield Power</span>
-              
-            </div>
-            <div className="flex gap-3 mt-3">
-              <a href="https://www.linkedin.com/company/biofield-power/" aria-label="Linkdin" className="text-gray-500 hover:text-green-800">
-                <FaLinkedin size={30} />
-              </a>
-              <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-green-800">
-                <FaInstagram size={30} />
-              </a>
-              <a href="https://twitter.com" aria-label="Twitter" className="text-gray-500 hover:text-green-800">
-                <FaTwitter size={30} />
-              </a>
-            </div>
-            <div className="flex items-center mt-3 text-grey-500 hover:text-green-800">
-                <FaPhone size={20} />
-            <a href="tel:+911234567890" className="ml-2">+91-8557897582</a>
-            </div>
-            <div className="flex items-center mt-3 text-black-200 hover:text-green-800">
-            <p className="ml-2">IIT Ropar, Rupnagar, Punjab, India</p>
-            </div>
-
-          </div>
-
-          <div >
-            <h3 className="text-xl  font-semibold mb-3">Company</h3>
-            <ul className="gap-4  flex">
-              <li><Link href="/about" className="hover:text-green-799">About Us</Link></li>
-              {/* <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSfHPtUx0tFN-uFkE8Bz_aG8EBTXhTkb9tUH0umyKFqJsjRvgQ/viewform" className="hover:text-green-800">Careers</Link></li> */}
-              <li><Link href="/careers" className="hover:text-green-799">Careers</Link></li>
-              {/* <li><Link href="/press" className="hover:text-green-800">Press</Link></li> */}
-              <li><Link href="#blog" className="hover:text-green-800">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-green-800">Contact</Link></li>
+    <footer className="bg-green-700 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
+          <div>
+            <h3 className="text-lg font-bold mb-2">Quick Links</h3>
+            <ul>
+              <li><a href="/" className="hover:underline">Home</a></li>
+              <li><a href="/about" className="hover:underline">About</a></li>
+              <li><a href="/services" className="hover:underline">Services</a></li>
+              <li><a href="/contact" className="hover:underline">Contact</a></li>
             </ul>
           </div>
-
-          {/* <div>
-            <h3 className="text-xl font-semibold mb-3">Support</h3>
-            <ul className="space-y-2">
-              <li><Link href="/help-center" className="hover:text-green-800">Help Center</Link></li>
-              <li><Link href="/faqs" className="hover:text-green-800">FAQs</Link></li>
-              <li><Link href="/shipping-returns" className="hover:text-green-800">Shipping & Returns</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-green-800">Privacy Policy</Link></li>
-              <li><Link href="/terms-of-service" className="hover:text-green-800">Terms of Service</Link></li>
+          <div>
+            <h3 className="text-lg font-bold mb-2">Company</h3>
+            <ul>
+              <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:underline">Terms & Conditions</a></li>
+              <li><a href="/faq" className="hover:underline">FAQ</a></li>
+              <li><a href="/support" className="hover:underline">Support</a></li>
             </ul>
-          </div> */}
-
-          {/* <div>
-            <h4 className="text-xl font-semibold mb-3">Subscribe to our newsletter</h4>
-            <p className="text-gray-600 mb-4">Stay updated with our latest news and offers.</p>
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-md bg-neutral-200 text-gray-700 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-green-600"
-              />
-              <button
-                type="submit"
-                aria-label="Subscribe"
-                className="bg-white text-black px-4 py-2 border border-gray-500 rounded-md hover:bg-green-500 transition-colors duration-200"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div> */}
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-2">Contact</h3>
+            <p>Biofield Power Pvt. Ltd.</p>
+            <p>ROOM NO- 316/317, 3 FLOOR, M VISVESVARAYA,<br />
+              IIT Ropar, Rupnagar, Punjab, India. 140001
+            </p>
+            <p>+91-85578-97582</p>
+            <p>info@biofieldpower.com</p>
+          </div>
         </div>
-
-        <div className="mt-10 text-sm text-center border-t border-gray-300 pt-4 text-gray-600">
-          <p>&copy; 2025 Biofield Power. All rights reserved.</p>
+        <div className="mt-8 border-t border-white pt-4 text-center">
+          <p>&copy; {new Date().getFullYear()} Biofield Power Pvt. Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
